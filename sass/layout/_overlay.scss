@@ -8,6 +8,12 @@
     background-size: contain;
     background-repeat: no-repeat;
 
+    &__slider {
+        position: absolute;
+        top: 33%;
+        right: 10%;
+    }
+
     &__intro {
         position: absolute;
         top: 4rem;

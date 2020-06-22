@@ -1,0 +1,39 @@
+.slider {
+    background-image: url('/assets/image/slider_bottom.png');
+    width: 76rem;
+    height: 11.5rem;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+    position: relative;
+
+    transform: scale(1.2);
+
+    & > a {
+        & > img {
+            height: 300px;
+            width: 300px;
+            border-radius: 45px;
+        }
+
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -90%);
+
+        transition: transform z-index .3s;
+
+        &:nth-child(1) {
+            animation: slider__1 9s linear infinite;
+        }
+
+        &:nth-child(2) {
+            animation: slider__2 9s linear infinite;
+        }
+
+        &:nth-child(3) {
+            animation: slider__3 9s linear infinite;
+        }
+    }
+
+}
+
