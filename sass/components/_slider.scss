@@ -13,7 +13,9 @@
         & > img {
             height: 300px;
             width: 300px;
-            border-radius: 45px;
+            box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: .63);
+
+            @include round(round);
         }
 
         position: absolute;
