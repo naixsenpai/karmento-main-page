@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'IRANSans';
+  src: url("../fonts/IRANSans/Farsi_numerals/webFonts/fonts/eot/IRANSansWeb(FaNum).eot") format("embedded-opentype");
+  src: url("../fonts/IRANSans/Farsi_numerals/webFonts/fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSans/Farsi_numerals/webFonts/fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype"), url("../fonts/IRANSans/Farsi_numerals/webFonts/fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/IRANSans/Farsi_numerals/webFonts/fonts/woff2/IRANSansWeb(FaNum).woff2") format("svg");
+}
+
+@font-face {
+  font-family: 'IRANSans(EnNum)';
+  src: url("../fonts/IRANSans/WebFonts/fonts/eot/IRANSansWeb.eot") format("embedded-opentype");
+  src: url("../fonts/IRANSans/WebFonts/fonts/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSans/WebFonts/fonts/ttf/IRANSansWeb.ttf") format("truetype"), url("../fonts/IRANSans/WebFonts/fonts/woff/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSans/WebFonts/fonts/woff2/IRANSansWeb.woff2") format("svg");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: IRANSans, sans-serif;
+  direction: rtl;
+}
+/*# sourceMappingURL=index.css.map */
