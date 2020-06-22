@@ -1,0 +1,19 @@
+.icon {
+    &__btn {
+        padding: 2rem;
+
+        width: 7rem;
+        height: 7rem;
+
+        transition: background-color .3s;
+
+        @include round(circle);
+        @include flexCenter;
+
+        &:hover,
+        &:active {
+            background-color: rgba($color: #fff, $alpha: .2);
+            cursor: pointer;
+        }
+    }
+}
