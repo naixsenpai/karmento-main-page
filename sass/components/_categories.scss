@@ -1,0 +1,38 @@
+.categories {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // flex-wrap: wrap;
+
+    overflow-x: hidden;
+
+    &__category {
+        margin-left: 1rem;
+        width: auto;
+
+        @include flexColCenter
+
+        & > p {
+            max-width: 10rem;
+            text-align: center;
+            color: $color-title-category;
+            margin-top: .5rem;
+        }
+
+        &__icon {
+            width: 10rem;
+            height: 10rem;
+            padding: 1rem;
+
+            border: $color-border-category 3px solid;
+            @include round(20);
+
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

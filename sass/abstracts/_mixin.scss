@@ -20,6 +20,9 @@
     @if $size == round {
         border-radius: 5rem;
     }
+    @if $size == 20 {
+        border-radius: 20px;
+    }
 }
 
 @mixin flexCenter {

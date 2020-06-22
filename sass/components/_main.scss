@@ -21,3 +21,9 @@ body {
 p {
     font-size: 2rem;
 }
+
+a {
+    &:hover {
+        cursor: pointer;
+    }
+}
