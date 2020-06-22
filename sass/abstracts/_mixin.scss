@@ -28,6 +28,12 @@
     align-items: center;
 }
 
+@mixin flexColCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 // MEDIA QUERY MANAGER
 /*
