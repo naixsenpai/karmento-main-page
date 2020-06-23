@@ -2,17 +2,16 @@
     width: 100%;
 
     display: flex;
+    flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: flex-start;
-    // flex-wrap: wrap;
-
     overflow-x: hidden;
 
     &__category {
         margin-left: 1rem;
         width: auto;
 
-        @include flexColCenter
+        @include flexColCenter;
 
         & > p {
             max-width: 10rem;

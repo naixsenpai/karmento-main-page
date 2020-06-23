@@ -45,8 +45,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @-webkit-keyframes slider__1 {
   0%, 30% {
     z-index: 2;
-    -webkit-transform: translate(0%, -90%) scale(1);
-            transform: translate(0%, -90%) scale(1);
+    -webkit-transform: translate(0%, -80%) scale(0.8);
+            transform: translate(0%, -80%) scale(0.8);
   }
   33%, 60% {
     z-index: 3;
@@ -55,21 +55,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   66%, 97% {
     z-index: 1;
-    -webkit-transform: translate(-100%, -90%) scale(1);
-            transform: translate(-100%, -90%) scale(1);
+    -webkit-transform: translate(-100%, -80%) scale(0.8);
+            transform: translate(-100%, -80%) scale(0.8);
   }
   100% {
     z-index: 2;
-    -webkit-transform: translate(0%, -90%) scale(1);
-            transform: translate(0%, -90%) scale(1);
+    -webkit-transform: translate(0%, -80%) scale(0.8);
+            transform: translate(0%, -80%) scale(0.8);
   }
 }
 
 @keyframes slider__1 {
   0%, 30% {
     z-index: 2;
-    -webkit-transform: translate(0%, -90%) scale(1);
-            transform: translate(0%, -90%) scale(1);
+    -webkit-transform: translate(0%, -80%) scale(0.8);
+            transform: translate(0%, -80%) scale(0.8);
   }
   33%, 60% {
     z-index: 3;
@@ -78,13 +78,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   66%, 97% {
     z-index: 1;
-    -webkit-transform: translate(-100%, -90%) scale(1);
-            transform: translate(-100%, -90%) scale(1);
+    -webkit-transform: translate(-100%, -80%) scale(0.8);
+            transform: translate(-100%, -80%) scale(0.8);
   }
   100% {
     z-index: 2;
-    -webkit-transform: translate(0%, -90%) scale(1);
-            transform: translate(0%, -90%) scale(1);
+    -webkit-transform: translate(0%, -80%) scale(0.8);
+            transform: translate(0%, -80%) scale(0.8);
   }
 }
 
@@ -96,13 +96,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   33%, 60% {
     z-index: 1;
-    -webkit-transform: translate(-100%, -90%) scale(1);
-            transform: translate(-100%, -90%) scale(1);
+    -webkit-transform: translate(-100%, -80%) scale(0.8);
+            transform: translate(-100%, -80%) scale(0.8);
   }
   66%, 97% {
     z-index: 2;
-    -webkit-transform: translate(0%, -90%) scale(1);
-            transform: translate(0%, -90%) scale(1);
+    -webkit-transform: translate(0%, -80%) scale(0.8);
+            transform: translate(0%, -80%) scale(0.8);
   }
   100% {
     z-index: 3;
@@ -119,13 +119,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   33%, 60% {
     z-index: 1;
-    -webkit-transform: translate(-100%, -90%) scale(1);
-            transform: translate(-100%, -90%) scale(1);
+    -webkit-transform: translate(-100%, -80%) scale(0.8);
+            transform: translate(-100%, -80%) scale(0.8);
   }
   66%, 97% {
     z-index: 2;
-    -webkit-transform: translate(0%, -90%) scale(1);
-            transform: translate(0%, -90%) scale(1);
+    -webkit-transform: translate(0%, -80%) scale(0.8);
+            transform: translate(0%, -80%) scale(0.8);
   }
   100% {
     z-index: 3;
@@ -137,13 +137,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @-webkit-keyframes slider__3 {
   0%, 30% {
     z-index: 1;
-    -webkit-transform: translate(-100%, -90%) scale(1);
-            transform: translate(-100%, -90%) scale(1);
+    -webkit-transform: translate(-100%, -80%) scale(0.8);
+            transform: translate(-100%, -80%) scale(0.8);
   }
   33%, 60% {
     z-index: 2;
-    -webkit-transform: translate(0%, -90%) scale(1);
-            transform: translate(0%, -90%) scale(1);
+    -webkit-transform: translate(0%, -80%) scale(0.8);
+            transform: translate(0%, -80%) scale(0.8);
   }
   66%, 97% {
     z-index: 3;
@@ -152,21 +152,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   100% {
     z-index: 1;
-    -webkit-transform: translate(-100%, -90%) scale(1);
-            transform: translate(-100%, -90%) scale(1);
+    -webkit-transform: translate(-100%, -80%) scale(0.8);
+            transform: translate(-100%, -80%) scale(0.8);
   }
 }
 
 @keyframes slider__3 {
   0%, 30% {
     z-index: 1;
-    -webkit-transform: translate(-100%, -90%) scale(1);
-            transform: translate(-100%, -90%) scale(1);
+    -webkit-transform: translate(-100%, -80%) scale(0.8);
+            transform: translate(-100%, -80%) scale(0.8);
   }
   33%, 60% {
     z-index: 2;
-    -webkit-transform: translate(0%, -90%) scale(1);
-            transform: translate(0%, -90%) scale(1);
+    -webkit-transform: translate(0%, -80%) scale(0.8);
+            transform: translate(0%, -80%) scale(0.8);
   }
   66%, 97% {
     z-index: 3;
@@ -175,8 +175,34 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   100% {
     z-index: 1;
-    -webkit-transform: translate(-100%, -90%) scale(1);
-            transform: translate(-100%, -90%) scale(1);
+    -webkit-transform: translate(-100%, -80%) scale(0.8);
+            transform: translate(-100%, -80%) scale(0.8);
+  }
+}
+
+@-webkit-keyframes animation--manycategories {
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes animation--manycategories {
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes animation--manycategories--opacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation--manycategories--opacity {
+  to {
+    opacity: 1;
   }
 }
 
@@ -295,6 +321,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;

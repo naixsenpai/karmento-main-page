@@ -1,7 +1,7 @@
 @keyframes slider__1 {
     0%, 30% {
         z-index: 2;
-        transform: translate(0%, -90%) scale(1);
+        transform: translate(0%, -80%) scale(.8);
     }
 
     33%, 60% {
@@ -11,12 +11,12 @@
 
     66%, 97% {
         z-index: 1;
-        transform: translate(-100%, -90%) scale(1);
+        transform: translate(-100%, -80%) scale(.8);
     }
 
     100% {
         z-index: 2;
-        transform: translate(0%, -90%) scale(1);
+        transform: translate(0%, -80%) scale(.8);
     }
 }
 
@@ -28,12 +28,12 @@
 
     33%, 60% {
         z-index: 1;
-        transform: translate(-100%, -90%) scale(1);
+        transform: translate(-100%, -80%) scale(.8);
     }
 
     66%, 97% {
         z-index: 2;
-        transform: translate(0%, -90%) scale(1);
+        transform: translate(0%, -80%) scale(.8);
     }
 
     100% {
@@ -45,12 +45,12 @@
 @keyframes slider__3 {
     0%, 30% {
         z-index: 1;
-        transform: translate(-100%, -90%) scale(1);
+        transform: translate(-100%, -80%) scale(.8);
     }
 
     33%, 60% {
         z-index: 2;
-        transform: translate(0%, -90%) scale(1);
+        transform: translate(0%, -80%) scale(.8);
     }
 
     66%, 97% {
@@ -60,6 +60,6 @@
 
     100% {
         z-index: 1;
-        transform: translate(-100%, -90%) scale(1);
+        transform: translate(-100%, -80%) scale(.8);
     }
 }
