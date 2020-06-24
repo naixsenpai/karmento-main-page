@@ -1,0 +1,52 @@
+.warranty {
+    width: 100%;
+    
+    @include flexCenter;
+
+    & > img {
+        width: auto;
+        height: 23rem;
+        margin-left: -2rem;
+        z-index: 2;
+    }
+
+    &__message {
+        width: 100%;
+        z-index: 1;
+        border: 1px solid #707070;
+
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(180,180,180,1) 100%);
+
+        @include flexCenter;
+        @include round(60);
+
+        &__main {
+            width: 55%;
+            height: 100%;
+
+            @include flexCenter;
+
+            &>p {
+                text-align: center;
+                font-size: 2.6rem;
+            }
+        }
+
+        &__other {
+            height: 100%;
+            overflow: auto;
+            border-right: 1px solid #707070;
+            padding: 1rem;
+
+            &--header {
+                font-size: 2.5rem !important;
+                color: $color-orange;
+                margin-bottom: .5rem;
+            }
+            &>p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
