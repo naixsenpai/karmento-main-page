@@ -2,21 +2,25 @@
     0%, 30% {
         z-index: 2;
         transform: translate(0%, -80%) scale(.8);
+        filter: blur(8px)
     }
 
     33%, 60% {
         z-index: 3;
         transform: translate(-50%, -90%) scale(1.1);
+        filter: blur(0px)
     }
 
     66%, 97% {
         z-index: 1;
         transform: translate(-100%, -80%) scale(.8);
+        filter: blur(8px)
     }
 
     100% {
         z-index: 2;
         transform: translate(0%, -80%) scale(.8);
+        filter: blur(8px)
     }
 }
 
@@ -24,21 +28,25 @@
     0%, 30% {
         z-index: 3;
         transform: translate(-50%, -90%) scale(1.1);
+        filter: blur(0px)
     }
 
     33%, 60% {
         z-index: 1;
         transform: translate(-100%, -80%) scale(.8);
+        filter: blur(8px)
     }
 
     66%, 97% {
         z-index: 2;
         transform: translate(0%, -80%) scale(.8);
+        filter: blur(8px)
     }
 
     100% {
         z-index: 3;
         transform: translate(-50%, -90%) scale(1.1);
+        filter: blur(0px)
     }
 }
 
@@ -46,20 +54,24 @@
     0%, 30% {
         z-index: 1;
         transform: translate(-100%, -80%) scale(.8);
+        filter: blur(8px)
     }
 
     33%, 60% {
         z-index: 2;
         transform: translate(0%, -80%) scale(.8);
+        filter: blur(8px)
     }
 
     66%, 97% {
         z-index: 3;
         transform: translate(-50%, -90%) scale(1.1);
+        filter: blur(0px)
     }
 
     100% {
         z-index: 1;
         transform: translate(-100%, -80%) scale(.8);
+        filter: blur(8px)
     }
 }

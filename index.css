@@ -47,21 +47,29 @@ ORDER: Base + typography > general layout + grid > page layout > components
     z-index: 2;
     -webkit-transform: translate(0%, -80%) scale(0.8);
             transform: translate(0%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   33%, 60% {
     z-index: 3;
     -webkit-transform: translate(-50%, -90%) scale(1.1);
             transform: translate(-50%, -90%) scale(1.1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
   66%, 97% {
     z-index: 1;
     -webkit-transform: translate(-100%, -80%) scale(0.8);
             transform: translate(-100%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   100% {
     z-index: 2;
     -webkit-transform: translate(0%, -80%) scale(0.8);
             transform: translate(0%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
 }
 
@@ -70,21 +78,29 @@ ORDER: Base + typography > general layout + grid > page layout > components
     z-index: 2;
     -webkit-transform: translate(0%, -80%) scale(0.8);
             transform: translate(0%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   33%, 60% {
     z-index: 3;
     -webkit-transform: translate(-50%, -90%) scale(1.1);
             transform: translate(-50%, -90%) scale(1.1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
   66%, 97% {
     z-index: 1;
     -webkit-transform: translate(-100%, -80%) scale(0.8);
             transform: translate(-100%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   100% {
     z-index: 2;
     -webkit-transform: translate(0%, -80%) scale(0.8);
             transform: translate(0%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
 }
 
@@ -93,21 +109,29 @@ ORDER: Base + typography > general layout + grid > page layout > components
     z-index: 3;
     -webkit-transform: translate(-50%, -90%) scale(1.1);
             transform: translate(-50%, -90%) scale(1.1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
   33%, 60% {
     z-index: 1;
     -webkit-transform: translate(-100%, -80%) scale(0.8);
             transform: translate(-100%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   66%, 97% {
     z-index: 2;
     -webkit-transform: translate(0%, -80%) scale(0.8);
             transform: translate(0%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   100% {
     z-index: 3;
     -webkit-transform: translate(-50%, -90%) scale(1.1);
             transform: translate(-50%, -90%) scale(1.1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
 }
 
@@ -116,21 +140,29 @@ ORDER: Base + typography > general layout + grid > page layout > components
     z-index: 3;
     -webkit-transform: translate(-50%, -90%) scale(1.1);
             transform: translate(-50%, -90%) scale(1.1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
   33%, 60% {
     z-index: 1;
     -webkit-transform: translate(-100%, -80%) scale(0.8);
             transform: translate(-100%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   66%, 97% {
     z-index: 2;
     -webkit-transform: translate(0%, -80%) scale(0.8);
             transform: translate(0%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   100% {
     z-index: 3;
     -webkit-transform: translate(-50%, -90%) scale(1.1);
             transform: translate(-50%, -90%) scale(1.1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
 }
 
@@ -139,21 +171,29 @@ ORDER: Base + typography > general layout + grid > page layout > components
     z-index: 1;
     -webkit-transform: translate(-100%, -80%) scale(0.8);
             transform: translate(-100%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   33%, 60% {
     z-index: 2;
     -webkit-transform: translate(0%, -80%) scale(0.8);
             transform: translate(0%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   66%, 97% {
     z-index: 3;
     -webkit-transform: translate(-50%, -90%) scale(1.1);
             transform: translate(-50%, -90%) scale(1.1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
   100% {
     z-index: 1;
     -webkit-transform: translate(-100%, -80%) scale(0.8);
             transform: translate(-100%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
 }
 
@@ -162,21 +202,29 @@ ORDER: Base + typography > general layout + grid > page layout > components
     z-index: 1;
     -webkit-transform: translate(-100%, -80%) scale(0.8);
             transform: translate(-100%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   33%, 60% {
     z-index: 2;
     -webkit-transform: translate(0%, -80%) scale(0.8);
             transform: translate(0%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
   66%, 97% {
     z-index: 3;
     -webkit-transform: translate(-50%, -90%) scale(1.1);
             transform: translate(-50%, -90%) scale(1.1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
   100% {
     z-index: 1;
     -webkit-transform: translate(-100%, -80%) scale(0.8);
             transform: translate(-100%, -80%) scale(0.8);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
   }
 }
 
