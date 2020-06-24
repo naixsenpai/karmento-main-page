@@ -1,6 +1,7 @@
 // main colors
 
 $color_white : #fff;
+$color_black : #000;
 
 $color_primary : #175F9B;
 
@@ -9,6 +10,11 @@ $color_secondary : #F05B23;
 // categories
 $color-border-category : #545454;
 $color-title-category : #3E3E3E;
+
+// services
+$color_services_border : #EF5D24;
+$color_services_border--blue : #216CA9;
+$color_services_button--blue : #2182BB;
 
 .color--white {
     color: $color_white;

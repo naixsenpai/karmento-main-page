@@ -11,31 +11,20 @@ for (var i = 1; i < categoryElement.children().length; i++) {
 }
 
 // categoryElement.on('click', function(e){
-//     console.log(
-//         categoryElement.offset().top
-//     );
 
 //     if (e.pageX / categoryElement.width() >= 1.6) {
-//         console.log('right');
 //         categoryElement.animate({ scrollLeft: categoryElement.offset().top}, 3000)
 //     } 
 //     if (e.pageX / categoryElement.width() <= 1.2) {
 //         categoryElement.animate({ scrollLeft: categoryElement.offset().top * -1}, 3000)
-//         console.log('left');
 //     }
 // })
 
 categoryElement.on('mouseenter', function(e){
-    console.log(
-        categoryElement.offset().top
-    );
-
     if (e.pageX / categoryElement.width() >= 1.6) {
-        console.log('right');
         categoryElement.animate({ scrollLeft: categoryElement.offset().top}, 3000)
     } 
     if (e.pageX / categoryElement.width() <= 1.2) {
         categoryElement.animate({ scrollLeft: categoryElement.offset().top * -1}, 3000)
-        console.log('left');
     }
 })

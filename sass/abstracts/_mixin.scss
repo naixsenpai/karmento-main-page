@@ -1,9 +1,41 @@
 @mixin clearfix {
-    &::after {
+    &::after,
+    &::before {
         content: "";
         display: table;
         clear: both;
     }
+}
+
+@mixin pseudo($quantity) {
+    position: relative;
+
+    @if $quantity==1 {
+        &::after {
+            position: absolute;
+            content: "";
+            clear: both;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    @if $quantity==2 {
+        &::after,
+        &::before {
+            position: absolute;
+            content: "";
+            clear: both;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+
 }
 
 @mixin absCenter {
@@ -14,14 +46,24 @@
 }
 
 @mixin round($size) {
-    @if $size == circle {
+    @if $size==circle {
         border-radius: 50%;
     }
-    @if $size == round {
+
+    @if $size==round {
         border-radius: 5rem;
     }
-    @if $size == 20 {
+
+    @if $size==20 {
         border-radius: 20px;
+    }
+
+    @if $size==15 {
+        border-radius: 15px;
+    }
+
+    @if $size==10 {
+        border-radius: 10px;
     }
 }
 
@@ -57,17 +99,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            @content
+        }
+
+        ; //600px
     }
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        }
+
+        ; //900px
     }
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ; //1200px
     }
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
+
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+
+        ; //1800
     }
 }
-

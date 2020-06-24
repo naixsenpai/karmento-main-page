@@ -12,7 +12,10 @@
         position: absolute;
         top: 30%;
         // top: 33% ;
-        right: 10%;
+        right: 5%;
+        @include respond(big-desktop) {
+            right: 8%;
+        }
     }
 
     &__categories {
@@ -22,6 +25,13 @@
         right: 5%;
 
         width: 50%;
+    }
+
+    &__services {
+        position: absolute;
+        top: 55%;
+        right: 5%;
+        width: 45%;
     }
 
     &__intro {
