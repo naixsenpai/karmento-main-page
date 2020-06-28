@@ -58,6 +58,10 @@
         border-radius: 60px;
     }
 
+    @if $size==40 {
+        border-radius: 40px;
+    }
+
     @if $size==20 {
         border-radius: 20px;
     }

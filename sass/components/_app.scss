@@ -78,7 +78,7 @@
                         @include pseudo(1);
                         
                         &::after {
-                            background: #2182BB;
+                            background: $color_list_circle;
                             @include round(circle);
                         }
                     }
