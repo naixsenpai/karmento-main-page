@@ -1,0 +1,11 @@
+.news {
+    width: 90%;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    border: 1px solid $color_border;
+    @include round(100);
+    margin-bottom: 3rem;
+}

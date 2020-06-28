@@ -1,0 +1,35 @@
+@keyframes animation--getawayImageHodler {
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes animation--newsImage {
+    to {
+        opacity: 1;
+        width: 380px;
+    }
+}
+
+@keyframes animation--newsContainer {
+    to {
+        height: unset;
+        border: 1px solid $color_border;
+    }
+}
+
+@keyframes animation--newsTitle {
+    to {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+@keyframes animation--hanging {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
