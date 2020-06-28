@@ -1,0 +1,23 @@
+.arrow {
+    &__direction {
+        &--left {
+            margin-right: 1rem;
+            clip-path: polygon(0 50%, 100% 100%, 100% 0);
+        }
+    }
+    &__color {
+        &--white {
+            background-color: $color-white;
+        }
+    }
+    &__size {
+        &--small {
+            height: 18px;
+            width: 18px;
+        }
+    }
+}
+
+.shape {
+    display: block;
+}

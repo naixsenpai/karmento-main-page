@@ -330,28 +330,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
-.btn {
-  font-size: 2rem;
-  text-decoration: none;
-}
-
-.btn--link {
-  color: #fff;
-  margin: 0rem .5rem;
-  padding: .6rem 2rem;
-  border-radius: 5rem;
-}
-
-@media only screen and (min-width: 112.5em) {
-  .btn--link {
-    margin: 0rem 1.5rem;
-  }
-}
-
-.btn--link--active {
-  border: 4px solid #EF5D24;
-}
-
 @font-face {
   font-family: 'IRANSans';
   src: url("../fonts/IRANSans/Farsi_numerals/webFonts/fonts/eot/IRANSansWeb(FaNum).eot") format("embedded-opentype");
@@ -1075,6 +1053,8 @@ input:focus {
 .btn {
   padding: 1rem 3rem;
   color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
   border-radius: 30px;
 }
 
@@ -1092,6 +1072,35 @@ input:focus {
 
 .btn--secondary {
   background-color: #EF5D24;
+}
+
+.btn--link {
+  color: #fff;
+  margin: 0rem .5rem;
+  padding: .6rem 2rem;
+  border-radius: 5rem;
+}
+
+@media only screen and (min-width: 112.5em) {
+  .btn--link {
+    margin: 0rem 1.5rem;
+  }
+}
+
+.btn--link--active {
+  border: 4px solid #EF5D24;
+}
+
+.btn--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .news__news {
@@ -1182,6 +1191,25 @@ input:focus {
 
 .news__getaway > button {
   width: 200px;
+}
+
+.arrow__direction--left {
+  margin-right: 1rem;
+  -webkit-clip-path: polygon(0 50%, 100% 100%, 100% 0);
+          clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+
+.arrow__color--white {
+  background-color: #fff;
+}
+
+.arrow__size--small {
+  height: 18px;
+  width: 18px;
+}
+
+.shape {
+  display: block;
 }
 
 .header {
