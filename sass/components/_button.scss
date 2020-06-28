@@ -1,0 +1,11 @@
+.btn {
+    padding: 1rem 3rem;
+    background-color: $color_default;
+    color: $color_white;
+
+    @include round(30);
+
+    &--success {
+        background-color: $color_success;
+    }
+}
