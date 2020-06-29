@@ -41,12 +41,17 @@ button {
     }
 }
 
-input {
-    padding: .5rem 1.5rem;
+input, textarea {
+    padding: .5rem 2rem;
     font-size: 2rem;
+    border: 1px solid $color_border;
 
     @include round(20);
     &:focus {
         outline: none;
     }
+}
+
+textarea {
+    padding: 2rem;
 }
