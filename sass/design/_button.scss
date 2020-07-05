@@ -1,0 +1,60 @@
+.btn {
+    padding: 1rem 3rem;
+    // background-color: $color_default;
+    color: $color_white;
+    font-size: 2rem;
+    text-decoration: none;
+
+    @include round(30);
+
+    &--success {
+        background-color: $color_success;
+    }
+
+    &--primary {
+        background-color: $color_primary;
+        &--dark {
+            background-color: $color_primary_dark;
+        }
+    }
+
+    &--secondary {
+        background-color: $color_secondary;
+    }
+
+    &--link {
+        color: $color_white;
+        margin: 0rem .5rem;
+        padding: .6rem 2rem;
+        overflow: hidden;
+        @include round(round);
+        @include respond(big-desktop) {
+            margin: 0rem 1.5rem;
+        }
+        @include pseudo(1);
+
+        &::after {
+            //z-index: -1;
+            transition: transform 300ms;
+            background-color: $color-orange;
+            @include round(round);
+            transform: translateY(110%);
+        }
+
+        &:hover,
+        &:focus {
+            background: $color-orange;
+            //&::after {
+            //    transform: translateY(0); todo: make this work
+            //}
+        }
+
+        &--active {
+            border: 4px solid $color-secondary;
+        }
+    }
+
+    &--icon {
+        @include flexCenter;
+    }
+}
