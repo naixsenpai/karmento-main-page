@@ -16,21 +16,26 @@ body {
     box-sizing: border-box;
     font-family: IRANSans, sans-serif;
     direction: rtl;
+    text-align: right;
 }
 
 p {
     font-size: 2rem;
+    margin-bottom: 0;
 }
 
 a {
+    color: $color_white !important;
     &:hover {
         cursor: pointer;
+    }
+    &>p {
+        color: $color-white;
     }
 }
 
 button {
     border: none;
-    background-color: none;
     background: none;
     font-size: 2rem;
     &:hover {

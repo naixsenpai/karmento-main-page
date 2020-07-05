@@ -1,6 +1,72 @@
 .count {
+    position: relative;
     @include flexCenter;
-    padding: 3rem 10rem;
+    padding: 3rem 15rem;
+    $position-left: 25%;
+
+    &__be-adviser {
+        position: absolute;
+        left: $position-left + 13%;
+        bottom: -20%;
+        height: 120px;
+        width: 120px;
+        background-color: rgba($color: #2182bb, $alpha: 0.8);
+        border: 7px solid $color-white;
+        box-shadow: 0 3px 6px rgba($color: $color-black, $alpha: .5);
+
+        @include round(circle);
+        @include flexColCenter;
+
+        &>p {
+            color: $color-white;
+            width: 80%;
+            transform: translateY(-3px);
+        }
+
+        &--you {
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__counter {
+
+        position: absolute;
+        left: $position-left;
+        font-size: 8rem;
+
+        background-color: $color-white;
+        border: 15px solid $color_services_border--blue;
+        color: #003B5E;
+        height: 250px;
+        width: 250px;
+
+        @include round(circle);
+        @include flexCenter;
+
+        &::after {
+            position: absolute;
+            content: "";
+            clear: both;
+            height: 120%;
+            width: 120%;
+            border: 4px dashed #2181BA;
+            @include round(circle);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            clear: both;
+            height: 137%;
+            width: 137%;
+            border: 15px solid rgba($color: #EF5D24, $alpha: .85);
+            background-color: rgba($color: $color-white, $alpha: .1);
+            box-shadow: 7px 7px 25px rgba($color: $color-black, $alpha: .54);
+
+            @include round(circle);
+        }
+    }
 
     &__container {
         width: 100%;
@@ -8,15 +74,27 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 3rem 5rem;
+        padding: 4rem 6rem 4rem 10rem;
+        box-shadow: 0px 15px 15px rgba($color: $color-black, $alpha: .49);
+
+        @include round(150);
+        @include pseudo(1);
+
+        &::after {
+            border: 4px dashed $color-white;
+            width: 99%;
+            height: 90%;
+            @include round(150);
+            @include absCenter;
+        }
 
         &>p {
             color: $color_white;
-            font-size: 4rem;
+            font-size: 4.5rem;
         }
 
         &__unit {
-            font-size: 3rem !important;
+            font-size: 3.5rem !important;
         }
     }
 }
