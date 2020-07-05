@@ -1,0 +1,22 @@
+.count {
+    @include flexCenter;
+    padding: 3rem 10rem;
+
+    &__container {
+        width: 100%;
+        background: $color_services_button--blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 5rem;
+
+        &>p {
+            color: $color_white;
+            font-size: 4rem;
+        }
+
+        &__unit {
+            font-size: 3rem !important;
+        }
+    }
+}
