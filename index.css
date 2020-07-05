@@ -1069,11 +1069,21 @@ section {
 }
 
 .btn {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
   padding: 1rem 3rem;
   color: #fff;
   font-size: 2rem;
   text-decoration: none;
   border-radius: 30px;
+}
+
+.btn:hover {
+  color: #fff !important;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .btn--success {

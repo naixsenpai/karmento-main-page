@@ -1,11 +1,16 @@
 .btn {
+    transition: transform .3s;
     padding: 1rem 3rem;
-    // background-color: $color_default;
     color: $color_white;
     font-size: 2rem;
     text-decoration: none;
 
     @include round(30);
+
+    &:hover {
+        color: $color-white !important;
+        transform: scale(1.1);
+    }
 
     &--success {
         background-color: $color_success;
@@ -13,6 +18,7 @@
 
     &--primary {
         background-color: $color_primary;
+
         &--dark {
             background-color: $color_primary_dark;
         }
@@ -28,9 +34,11 @@
         padding: .6rem 2rem;
         overflow: hidden;
         @include round(round);
+
         @include respond(big-desktop) {
             margin: 0rem 1.5rem;
         }
+
         @include pseudo(1);
 
         &::after {
