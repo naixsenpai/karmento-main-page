@@ -1,8 +1,6 @@
 .overlay {
-    position: relative;
-
     width: 100%;
-    height: 100vw;
+    min-height: 100vw;
 
     background-image: url('/assets/image/overlay.png');
     background-size: contain;
