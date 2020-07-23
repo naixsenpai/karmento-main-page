@@ -1,50 +1,32 @@
 .overlay {
     width: 100%;
-    min-height: 100vw;
-
     background-image: url('/assets/image/overlay.png');
     background-size: contain;
     background-repeat: no-repeat;
+    padding-top: 3rem;
+    margin-bottom: 5rem;
 
     &__slider {
-        position: absolute;
-        top: 30%;
-        // top: 33% ;
-        right: 5%;
-        @include respond(big-desktop) {
-            right: 8%;
-        }
+        margin-top: 10rem;
     }
 
     &__categories {
-        position: absolute;
-        top: 38%;
-        // top: 48%;
-        right: 5%;
-
+        margin-right: 3rem;
         width: 50%;
     }
 
     &__services {
-        position: absolute;
-        top: 55%;
-        right: 5%;
         width: 45%;
     }
 
     &__warranty {
-        position: absolute;
-        bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-
         width: 80%;
+        @include flexCenter;
+        margin: 0 auto;
     }
 
     &__intro {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
+        margin: 0rem auto 0 3rem;
         width: 30rem;
 
         @include flexColCenter;
