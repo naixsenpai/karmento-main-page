@@ -1,110 +1,118 @@
 .services {
-    margin: 5rem 5rem 0 0;
-    width: 100%;
-    @include flexCenter;
-    
-    &__service {
-        width: 30%;
-        @include flexColCenter;
-        margin: 0rem 3rem;
-        position: relative;
+  margin: 5rem 5rem 0 0;
+  width: 100%;
+  @include flexCenter;
 
-        &--noLeftMargin {
-            margin-left: 0
-        }
+  &__service {
+    width: 30%;
+    @include flexColCenter;
+    margin: 0rem 3rem;
+    position: relative;
 
-        &>a {
-            transition: transform .3s;
-            width: 100%;
-            @include flexColCenter;
-
-            &>div {
-                @include pseudo(2);
-                width: 11rem;
-                height: 11rem;
-
-                @include flexCenter;
-
-                &>img {
-                    width: 90%;
-                    height: 90%;
-                    box-shadow: 0px 3px 20px $color_black;
-                    @include round(circle);
-                }
-
-                &::after {
-                    width: 125%;
-                    height: 125%;
-                    border: 5px dashed $color_services_border;
-
-                    @include absCenter;
-                    @include round(circle);
-                }
-
-                &::before {
-                    width: 135%;
-                    height: 135%;
-                    border: 2px solid $color_services_border--blue;
-
-                    @include absCenter;
-                    @include round(circle);
-                }
-            }
-
-            &>p {
-                transition: box-shadow .3s;
-                font-size: 3rem;
-                text-align: center;
-                font-weight: bold;
-                color: $color_black;
-                min-width: 210px;
-
-                padding: .5rem 1.5rem;
-                border: 2px solid $color_services_button--blue;
-                background: rgb(255, 255, 255);
-                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(245, 228, 213, 1) 100%);
-                margin-top: 22px;
-
-                box-shadow: none;
-
-                @include pseudo(1);
-                @include round(20);
-
-
-                &::after {
-                    width: 108%;
-                    height: 100%;
-                    border: 2px dashed #707070;
-
-                    @include absCenter;
-                    @include round(20);
-
-                    transform: translate(-50%, -50%) scale(.9);
-                }
-
-            }
-        }
-
-        &>p {
-            transition: transform .3s;
-            position: absolute;
-            text-align: center;
-            margin-top: 3rem;
-            width: 246px;
-            top: 100%;
-        }
-
-        &:hover,
-        &:focus {
-            &>p {
-                transform: translateY(45px);
-            }
-            &>a {
-                transform: scale(1.1);
-                &>p {
-                    box-shadow: 0px 60px 91px -7px rgba(96, 227, 253, 0.678);
-                }
-            }
-        }
+    &--noLeftMargin {
+      margin-left: 0;
     }
+
+    & > a {
+      transition: transform 0.3s;
+      width: 100%;
+      @include flexColCenter;
+
+      & > div {
+        @include pseudo(2);
+        width: 11rem;
+        height: 11rem;
+
+        @include flexCenter;
+
+        & > img {
+          width: 90%;
+          height: 90%;
+          box-shadow: 0px 3px 20px $color_black;
+          @include round(circle);
+        }
+
+        &::after {
+          width: 125%;
+          height: 125%;
+          border: 5px dashed $color_services_border;
+
+          @include absCenter;
+          @include round(circle);
+        }
+
+        &::before {
+          width: 135%;
+          height: 135%;
+          border: 2px solid $color_services_border--blue;
+
+          @include absCenter;
+          @include round(circle);
+        }
+      }
+
+      & > p {
+        transition: box-shadow 0.3s;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
+        color: $color_black;
+        min-width: 210px;
+
+        padding: 0.5rem 1.5rem;
+        border: 2px solid $color_services_button--blue;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(245, 228, 213, 1) 100%
+        );
+        margin-top: 22px;
+
+        box-shadow: none;
+
+        @include pseudo(1);
+        @include round(20);
+
+        &::after {
+          width: 108%;
+          height: 100%;
+          border: 2px dashed #707070;
+
+          @include absCenter;
+          @include round(20);
+
+          transform: translate(-50%, -50%) scale(0.9);
+        }
+      }
+    }
+
+    & > p {
+      transition: transform 0.3s;
+      position: absolute;
+      text-align: center;
+      margin-top: 3rem;
+      width: 246px;
+      top: 100%;
+    }
+
+    &:hover,
+    &:focus {
+      & > p {
+        transform: translateY(45px);
+      }
+      & > a {
+        transform: scale(1.1);
+        & > p {
+          box-shadow: 0px 60px 91px -7px rgba(96, 227, 253, 0.678);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .services {
+    margin: 28rem 5rem 0 0;
+  }
 }

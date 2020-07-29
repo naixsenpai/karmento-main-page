@@ -1,77 +1,84 @@
 .overlay {
-    width: 100%;
-    background-image: url('/assets/image/overlay.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-top: 3rem;
-    margin-bottom: 5rem;
+  width: 100%;
+  background-image: url("/assets/image/overlay.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
 
-    &__slider {
-        margin-top: 10rem;
+  &__slider {
+    margin-top: 10rem;
+  }
+
+  &__categories {
+    margin-right: 3rem;
+    width: 50%;
+  }
+
+  &__services {
+    width: 45%;
+  }
+
+  &__warranty {
+    width: 80%;
+    @include flexCenter;
+    margin: 0 auto;
+  }
+
+  &__intro {
+    margin: 0rem auto 0 3rem;
+    width: 30rem;
+
+    @include flexColCenter;
+    @include respond(big-desktop) {
+      width: auto;
     }
 
-    &__categories {
-        margin-right: 3rem;
-        width: 50%;
+    & > svg {
+      width: 100%;
+      height: 11.5rem;
+
+      @include respond(big-desktop) {
+        width: auto;
+        height: 17rem;
+      }
     }
 
+    & > p {
+      margin-top: 0.5rem;
+      @include respond(big-desktop) {
+        font-size: 3rem;
+      }
+    }
+
+    &__applications {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0rem;
+
+      & > a > svg {
+        width: 7rem;
+        height: 7rem;
+      }
+
+      @include respond(big-desktop) {
+        padding: 1rem 1.5rem;
+
+        & > a > svg {
+          width: unset;
+          height: unset;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .overlay {
     &__services {
-        width: 45%;
+      width: 75%;
     }
-
-    &__warranty {
-        width: 80%;
-        @include flexCenter;
-        margin: 0 auto;
-    }
-
-    &__intro {
-        margin: 0rem auto 0 3rem;
-        width: 30rem;
-
-        @include flexColCenter;
-        @include respond(big-desktop) {
-            width: auto;
-        }
-
-        & > svg {
-            width: 100%;
-            height: 11.5rem;
-
-            @include respond(big-desktop) {
-                width: auto;
-                height: 17rem;
-            }
-        }
-
-        & > p {
-            margin-top: .5rem;
-            @include respond(big-desktop) {
-                font-size: 3rem;
-            }
-        }
-
-        &__applications {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0rem;
-
-
-            & > a > svg {
-                width: 7rem;
-                height: 7rem;
-            }
-
-            @include respond(big-desktop) {
-                padding: 1rem 1.5rem;
-
-                & > a > svg {
-                    width: unset;
-                    height: unset;
-                }
-            }
-        }
-    }
+  }
 }

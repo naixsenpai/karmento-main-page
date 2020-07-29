@@ -53,3 +53,18 @@
         }
     }
 }
+
+@media only screen and (max-width: 1240px) {
+    .email {
+        &__email {
+            &__form {
+                &>button {
+                    height: 50px;
+                }
+                &>div {
+                    height: unset;
+                }
+            }
+        }
+    }
+}

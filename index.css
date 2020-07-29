@@ -357,6 +357,12 @@ html {
   font-size: 65.5%;
 }
 
+@media only screen and (max-width: 1240px) {
+  html {
+    font-size: 50.5%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -560,10 +566,10 @@ section {
 }
 
 .services__service > a {
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,16 +644,16 @@ section {
 }
 
 .services__service > a > p {
-  -webkit-transition: -webkit-box-shadow .3s;
-  transition: -webkit-box-shadow .3s;
-  transition: box-shadow .3s;
-  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   font-size: 3rem;
   text-align: center;
   font-weight: bold;
   color: #000;
   min-width: 210px;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border: 2px solid #2182BB;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#f5e4d5));
@@ -684,10 +690,10 @@ section {
 }
 
 .services__service > p {
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   position: absolute;
   text-align: center;
   margin-top: 3rem;
@@ -708,6 +714,12 @@ section {
 .services__service:hover > a > p, .services__service:focus > a > p {
   -webkit-box-shadow: 0px 60px 91px -7px rgba(96, 227, 253, 0.678);
           box-shadow: 0px 60px 91px -7px rgba(96, 227, 253, 0.678);
+}
+
+@media only screen and (max-width: 1240px) {
+  .services {
+    margin: 28rem 5rem 0 0;
+  }
 }
 
 .warranty {
@@ -1072,6 +1084,15 @@ section {
   text-align: left;
   border-radius: 15px;
   direction: ltr;
+}
+
+@media only screen and (max-width: 1240px) {
+  .email__email__form > button {
+    height: 50px;
+  }
+  .email__email__form > div {
+    height: unset;
+  }
 }
 
 .btn {
@@ -1644,7 +1665,7 @@ section {
   font-size: 8rem;
   background-color: #fff;
   border: 15px solid #216CA9;
-  color: #003B5E;
+  color: #003b5e;
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -1665,7 +1686,7 @@ section {
   clear: both;
   height: 120%;
   width: 120%;
-  border: 4px dashed #2181BA;
+  border: 4px dashed #2181ba;
   border-radius: 50%;
 }
 
@@ -1732,6 +1753,15 @@ section {
   font-size: 3.5rem !important;
 }
 
+@media only screen and (max-width: 1240px) {
+  .count {
+    padding: 3rem 5rem;
+  }
+  .count__be-adviser {
+    left: 45%;
+  }
+}
+
 .header {
   width: 100%;
   background-color: #175F9B;
@@ -1752,19 +1782,28 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__navbar {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+}
+
+@media only screen and (min-width: 112.5em) {
+  .header__navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header__navigate {
@@ -1912,7 +1951,7 @@ section {
 }
 
 .overlay__intro > p {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 @media only screen and (min-width: 112.5em) {
@@ -1947,6 +1986,12 @@ section {
   .overlay__intro__applications > a > svg {
     width: unset;
     height: unset;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .overlay__services {
+    width: 75%;
   }
 }
 

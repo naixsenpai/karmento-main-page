@@ -12,6 +12,12 @@ html {
     font-size: 65.5%;
 }
 
+@media only screen and (max-width: 1240px) {
+    html {
+        font-size: 50.5%;
+    }
+}
+
 body {
     box-sizing: border-box;
     font-family: IRANSans, sans-serif;
