@@ -55,39 +55,39 @@
     }
 
     @if $size==150 {
-        border-radius: 150px;
+        border-radius: 15rem;
     }
 
     @if $size==100 {
-        border-radius: 100px;
+        border-radius: 10rem;
     }
 
     @if $size==80 {
-        border-radius: 80px;
+        border-radius: 8rem;
     }
 
     @if $size==60 {
-        border-radius: 60px;
+        border-radius: 6rem;
     }
 
     @if $size==40 {
-        border-radius: 40px;
+        border-radius: 4rem;
     }
 
     @if $size==30 {
-        border-radius: 30px;
+        border-radius: 3rem;
     }
 
     @if $size==20 {
-        border-radius: 20px;
+        border-radius: 2rem;
     }
 
     @if $size==15 {
-        border-radius: 15px;
+        border-radius: 1.5rem;
     }
 
     @if $size==10 {
-        border-radius: 10px;
+        border-radius: 1rem;
     }
 }
 

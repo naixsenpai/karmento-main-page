@@ -27,7 +27,7 @@
         grid-column-gap: 3rem;
 
         &__category {
-            width: 150px;
+            width: 15rem;
     
             display: flex;
             flex-direction: column;
@@ -70,8 +70,8 @@
 
                     &>span {
                         position: relative;
-                        height: 5px;
-                        width: 5px;
+                        height: .5rem;
+                        width: .5rem;
 
                         margin-left: .5rem;
 

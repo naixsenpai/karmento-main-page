@@ -8,8 +8,8 @@
     position: absolute;
     left: $position-left + 13%;
     bottom: -20%;
-    height: 120px;
-    width: 120px;
+    height: 12rem;
+    width: 12rem;
     background-color: rgba($color: #2182bb, $alpha: 0.8);
     border: 7px solid $color-white;
     box-shadow: 0 3px 6px rgba($color: $color-black, $alpha: 0.5);
@@ -35,10 +35,10 @@
     font-size: 8rem;
 
     background-color: $color-white;
-    border: 15px solid $color_services_border--blue;
+    border: 1.5rem solid $color_services_border--blue;
     color: #003b5e;
-    height: 250px;
-    width: 250px;
+    height: 25rem;
+    width: 25rem;
 
     @include round(circle);
     @include flexCenter;
@@ -49,7 +49,7 @@
       clear: both;
       height: 120%;
       width: 120%;
-      border: 4px dashed #2181ba;
+      border: .4rem dashed #2181ba;
       @include round(circle);
     }
 
@@ -59,9 +59,9 @@
       clear: both;
       height: 137%;
       width: 137%;
-      border: 15px solid rgba($color: #ef5d24, $alpha: 0.85);
+      border: 1.5rem solid rgba($color: #ef5d24, $alpha: 0.85);
       background-color: rgba($color: $color-white, $alpha: 0.1);
-      box-shadow: 7px 7px 25px rgba($color: $color-black, $alpha: 0.54);
+      box-shadow: .7rem .7rem 2.5rem rgba($color: $color-black, $alpha: 0.54);
 
       @include round(circle);
     }
@@ -74,7 +74,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 4rem 6rem 4rem 10rem;
-    box-shadow: 0px 15px 15px rgba($color: $color-black, $alpha: 0.49);
+    box-shadow: 0px 1.5rem 1.5rem rgba($color: $color-black, $alpha: 0.49);
 
     @include round(150);
     @include pseudo(1);
