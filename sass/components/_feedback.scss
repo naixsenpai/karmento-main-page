@@ -16,7 +16,7 @@
 
         &__element {
             width: 100%;
-            border: 2px solid $color_border;
+            border: .2rem solid $color_border;
             padding: 2rem;
             @include round(20);
 
@@ -37,7 +37,7 @@
             @include flexCenter;
             &>img {
                 height: auto;
-                width: 300px;
+                width: 30rem;
             }
         }
 

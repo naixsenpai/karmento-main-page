@@ -310,23 +310,23 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @-webkit-keyframes animation--hanging {
   from {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes animation--hanging {
   from {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -452,8 +452,8 @@ section {
 .slider > a > img {
   height: 30rem;
   width: 30rem;
-  -webkit-box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.63);
-          box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.63);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.63);
   border-radius: 5rem;
 }
 
@@ -519,7 +519,7 @@ section {
   width: 10rem;
   height: 10rem;
   padding: 1rem;
-  border: #545454 3px solid;
+  border: #545454 0.3rem solid;
   border-radius: 2rem;
 }
 
@@ -840,8 +840,8 @@ section {
   padding: 3rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (300px)[2];
-      grid-template-rows: repeat(2, 300px);
+  -ms-grid-rows: (30rem)[2];
+      grid-template-rows: repeat(2, 30rem);
   grid-auto-flow: column;
   grid-column-gap: 3rem;
 }
@@ -874,7 +874,7 @@ section {
   width: 10rem;
   height: 10rem;
   padding: 1rem;
-  border: #545454 3px solid;
+  border: #545454 0.3rem solid;
   border-radius: 2rem;
 }
 
@@ -964,7 +964,7 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 3rem 0rem;
+  padding: 3rem 0 3rem 1.5rem;
 }
 
 .video__list > h3 {
@@ -1076,7 +1076,7 @@ section {
 }
 
 .email__email__form > div {
-  height: 70px;
+  height: 7rem;
 }
 
 .email__email__form > div > input {
@@ -1088,7 +1088,7 @@ section {
 
 @media only screen and (max-width: 1240px) {
   .email__email__form > button {
-    height: 50px;
+    height: 5rem;
   }
   .email__email__form > div {
     height: unset;
@@ -1170,7 +1170,7 @@ section {
 }
 
 .btn--link--active {
-  border: 4px solid #EF5D24;
+  border: 0.4rem solid #EF5D24;
 }
 
 .btn--icon {
@@ -1222,7 +1222,7 @@ section {
 }
 
 .news__news__title > a {
-  max-width: 280px;
+  max-width: 28rem;
 }
 
 .news__news__image {
@@ -1272,7 +1272,7 @@ section {
 }
 
 .news__getaway > a {
-  max-width: 200px;
+  max-width: 20rem;
 }
 
 .arrow__direction--left {
@@ -1322,7 +1322,7 @@ section {
 
 .feedback__list__element {
   width: 100%;
-  border: 2px solid #707070;
+  border: 0.2rem solid #707070;
   padding: 2rem;
   border-radius: 2rem;
 }
@@ -1352,7 +1352,7 @@ section {
 
 .feedback__header__logo > img {
   height: auto;
-  width: 300px;
+  width: 30rem;
 }
 
 .feedback__header__title {
@@ -1412,8 +1412,8 @@ section {
   max-width: 100%;
   width: 100%;
   resize: vertical;
-  height: 350px;
-  max-height: 350px;
+  height: 35rem;
+  max-height: 35rem;
 }
 
 .form__container__form__personal-info {
@@ -1530,7 +1530,7 @@ section {
 .adviser__list__list > img {
   height: 11rem;
   width: 11rem;
-  border: 5px solid #707070;
+  border: .5rem solid #707070;
   border-radius: 50%;
 }
 
@@ -1628,9 +1628,9 @@ section {
   height: 12rem;
   width: 12rem;
   background-color: rgba(33, 130, 187, 0.8);
-  border: 7px solid #fff;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  border: 0.7rem solid #fff;
+  -webkit-box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1650,12 +1650,12 @@ section {
 .count__be-adviser > p {
   color: #fff;
   width: 80%;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
 }
 
 .count__be-adviser--you {
-  margin-right: 15px;
+  margin-right: 1.5rem;
   font-size: 1.5rem;
 }
 
@@ -1716,8 +1716,8 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding: 4rem 6rem 4rem 10rem;
-  -webkit-box-shadow: 0px 1.5rem 1.5rem rgba(0, 0, 0, 0.49);
-          box-shadow: 0px 1.5rem 1.5rem rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.49);
+          box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.49);
   border-radius: 15rem;
   position: relative;
 }
@@ -1733,7 +1733,7 @@ section {
 }
 
 .count__container::after {
-  border: 4px dashed #fff;
+  border: 0.4rem dashed #fff;
   width: 99%;
   height: 90%;
   border-radius: 15rem;
@@ -1758,7 +1758,7 @@ section {
     padding: 3rem 5rem;
   }
   .count__be-adviser {
-    left: 45%;
+    left: 40%;
   }
 }
 
@@ -1819,7 +1819,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem .7rem;
-  border: 3px solid #393939;
+  border: .3rem solid #393939;
   cursor: pointer;
   border-radius: 3rem;
   position: relative;
@@ -1862,7 +1862,7 @@ section {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  border: 2px solid #707070;
+  border: .2rem solid #707070;
   border-radius: 3rem;
 }
 
@@ -1874,7 +1874,7 @@ section {
 }
 
 .header__navigate--adviser {
-  margin-right: 20px;
+  margin-right: 2rem;
   color: #133C73 !important;
 }
 
