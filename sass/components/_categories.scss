@@ -1,37 +1,50 @@
 .categories {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: flex-start;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
 
-    &__category {
-        margin-left: 1rem;
-        width: auto;
+  @include respond(tab-port) {
+    overflow-x: auto;
+  }
 
-        @include flexColCenter;
+  &__logo {
+    display: none;
 
-        & > p {
-            max-width: 10rem;
-            text-align: center;
-            color: $color-title-category;
-            margin-top: .5rem;
-        }
-
-        &__icon {
-            width: 10rem;
-            height: 10rem;
-            padding: 1rem;
-
-            border: $color-border-category .3rem solid;
-            @include round(20);
-
-            & > img {
-                width: 100%;
-                height: 100%;
-            }
-        }
+    @include respond(tab-port) {
+      @include flexCenter;
+      margin: 3rem 0;
     }
+  }
+
+  &__category {
+    margin-left: 1rem;
+    width: auto;
+
+    @include flexColCenter;
+
+    & > p {
+      max-width: 10rem;
+      text-align: center;
+      color: $color-title-category;
+      margin-top: 0.5rem;
+    }
+
+    &__icon {
+      width: 10rem;
+      height: 10rem;
+      padding: 1rem;
+
+      border: $color-border-category 0.3rem solid;
+      @include round(20);
+
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }

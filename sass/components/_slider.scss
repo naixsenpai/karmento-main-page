@@ -13,6 +13,11 @@
         transform: scale(1.2);
     }
 
+    @include respond(tab-port) {
+        margin: 0 auto;
+        width: 36rem;
+    }
+
     & > a {
         & > img {
             height: 30rem;
@@ -38,6 +43,26 @@
 
         &:nth-child(3) {
             animation: slider__3 9s linear infinite;
+        }
+
+        @include respond(tab-port) {
+            top: 3rem;
+            &>img {
+                height: 28rem;
+                width: 28rem;
+                @include round(15);
+            }
+            &:nth-child(1) {
+                animation: slider__1--phone 9s linear infinite;
+            }
+    
+            &:nth-child(2) {
+                animation: slider__2--phone 9s linear infinite;
+            }
+    
+            &:nth-child(3) {
+                animation: slider__3--phone 9s linear infinite;
+            }
         }
     }
 

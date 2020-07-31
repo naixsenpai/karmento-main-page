@@ -3,6 +3,26 @@
   width: 100%;
   @include flexCenter;
 
+  &__title {
+    display: none;
+    @include respond(tab-port) {
+      margin-top: 4rem;
+
+      @include flexCenter;
+
+      & > p {
+        margin-left: 2rem;
+        color: #002641;
+        font-size: 6rem;
+      }
+
+      & > svg {
+        width: 18rem;
+        transform: translateY(-5px);
+      }
+    }
+  }
+
   &__service {
     width: 30%;
     @include flexColCenter;
@@ -114,5 +134,17 @@
 @media only screen and (max-width: 1240px) {
   .services {
     margin: 28rem 5rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .services {
+    margin: 4rem 0 0 0;
+    &__service {
+      width: unset;
+      &:nth-child(1) {
+        margin-right: 0;
+      }
+    }
   }
 }

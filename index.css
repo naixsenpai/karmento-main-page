@@ -228,6 +228,144 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
+@-webkit-keyframes slider__2--phone {
+  0%, 30% {
+    z-index: 3;
+    -webkit-transform: translate(-50%, -90%) scale(1.1);
+            transform: translate(-50%, -90%) scale(1.1);
+  }
+  33%, 60% {
+    z-index: 1;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  66%, 97% {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  100% {
+    z-index: 3;
+    -webkit-transform: translate(-50%, -90%) scale(1.1);
+            transform: translate(-50%, -90%) scale(1.1);
+  }
+}
+
+@keyframes slider__2--phone {
+  0%, 30% {
+    z-index: 3;
+    -webkit-transform: translate(-50%, -90%) scale(1.1);
+            transform: translate(-50%, -90%) scale(1.1);
+  }
+  33%, 60% {
+    z-index: 1;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  66%, 97% {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  100% {
+    z-index: 3;
+    -webkit-transform: translate(-50%, -90%) scale(1.1);
+            transform: translate(-50%, -90%) scale(1.1);
+  }
+}
+
+@-webkit-keyframes slider__1--phone {
+  0%, 30% {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  33%, 60% {
+    z-index: 3;
+    -webkit-transform: translate(-50%, -90%) scale(1.1);
+            transform: translate(-50%, -90%) scale(1.1);
+  }
+  66%, 97% {
+    z-index: 1;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  100% {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+}
+
+@keyframes slider__1--phone {
+  0%, 30% {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  33%, 60% {
+    z-index: 3;
+    -webkit-transform: translate(-50%, -90%) scale(1.1);
+            transform: translate(-50%, -90%) scale(1.1);
+  }
+  66%, 97% {
+    z-index: 1;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  100% {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+}
+
+@-webkit-keyframes slider__3--phone {
+  0%, 30% {
+    z-index: 1;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  33%, 60% {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  66%, 97% {
+    z-index: 3;
+    -webkit-transform: translate(-50%, -90%) scale(1.1);
+            transform: translate(-50%, -90%) scale(1.1);
+  }
+  100% {
+    z-index: 1;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+}
+
+@keyframes slider__3--phone {
+  0%, 30% {
+    z-index: 1;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  33%, 60% {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+  66%, 97% {
+    z-index: 3;
+    -webkit-transform: translate(-50%, -90%) scale(1.1);
+            transform: translate(-50%, -90%) scale(1.1);
+  }
+  100% {
+    z-index: 1;
+    -webkit-transform: translate(-50%, -90%) scale(0.8);
+            transform: translate(-50%, -90%) scale(0.8);
+  }
+}
+
 @-webkit-keyframes animation--manycategories {
   to {
     -webkit-transform: none;
@@ -363,6 +501,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 40.5%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -438,6 +582,13 @@ section {
   }
 }
 
+@media only screen and (max-width: 56.25em) {
+  .slider {
+    margin: 0 auto;
+    width: 36rem;
+  }
+}
+
 .slider > a {
   position: absolute;
   left: 50%;
@@ -472,6 +623,29 @@ section {
           animation: slider__3 9s linear infinite;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .slider > a {
+    top: 3rem;
+  }
+  .slider > a > img {
+    height: 28rem;
+    width: 28rem;
+    border-radius: 1.5rem;
+  }
+  .slider > a:nth-child(1) {
+    -webkit-animation: slider__1--phone 9s linear infinite;
+            animation: slider__1--phone 9s linear infinite;
+  }
+  .slider > a:nth-child(2) {
+    -webkit-animation: slider__2--phone 9s linear infinite;
+            animation: slider__2--phone 9s linear infinite;
+  }
+  .slider > a:nth-child(3) {
+    -webkit-animation: slider__3--phone 9s linear infinite;
+            animation: slider__3--phone 9s linear infinite;
+  }
+}
+
 .categories {
   width: 100%;
   display: -webkit-box;
@@ -488,6 +662,31 @@ section {
       -ms-flex-align: start;
           align-items: flex-start;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .categories {
+    overflow-x: auto;
+  }
+}
+
+.categories__logo {
+  display: none;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .categories__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3rem 0;
+  }
 }
 
 .categories__category {
@@ -512,7 +711,7 @@ section {
   max-width: 10rem;
   text-align: center;
   color: #3E3E3E;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .categories__category__icon {
@@ -540,6 +739,35 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.services__title {
+  display: none;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .services__title {
+    margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services__title > p {
+    margin-left: 2rem;
+    color: #002641;
+    font-size: 6rem;
+  }
+  .services__title > svg {
+    width: 18rem;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
 }
 
 .services__service {
@@ -719,6 +947,18 @@ section {
 @media only screen and (max-width: 1240px) {
   .services {
     margin: 28rem 5rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .services {
+    margin: 4rem 0 0 0;
+  }
+  .services__service {
+    width: unset;
+  }
+  .services__service:nth-child(1) {
+    margin-right: 0;
   }
 }
 
@@ -1887,13 +2127,38 @@ section {
   margin-bottom: 5rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .overlay {
+    background-image: none;
+  }
+}
+
 .overlay__slider {
   margin-top: 10rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .overlay__slider {
+    margin-top: 23rem;
+  }
 }
 
 .overlay__categories {
   margin-right: 3rem;
   width: 50%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .overlay__categories {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .overlay__categories {
+    width: 90%;
+  }
 }
 
 .overlay__services {
@@ -1989,9 +2254,22 @@ section {
   }
 }
 
+@media only screen and (max-width: 56.25em) {
+  .overlay__intro {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   .overlay__services {
     width: 75%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .overlay__services {
+    width: 100%;
+    margin: 0;
   }
 }
 

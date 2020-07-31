@@ -6,13 +6,27 @@
   padding-top: 3rem;
   margin-bottom: 5rem;
 
+  @include respond(tab-port) {
+    background-image: none;
+  }
+
   &__slider {
     margin-top: 10rem;
+    @include respond(tab-port) {
+      margin-top: 23rem;
+    }
   }
 
   &__categories {
     margin-right: 3rem;
     width: 50%;
+    @include respond(tab-port) {
+      width: 70%;
+      margin: 0 auto;
+    }
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__services {
@@ -72,6 +86,10 @@
         }
       }
     }
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 }
 
@@ -79,6 +97,15 @@
   .overlay {
     &__services {
       width: 75%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .overlay {
+    &__services {
+      width: 100%;
+      margin: 0;
     }
   }
 }

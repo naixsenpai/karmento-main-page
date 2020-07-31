@@ -18,6 +18,12 @@ html {
     }
 }
 
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 40.5%;
+    }
+}
+
 body {
     box-sizing: border-box;
     font-family: IRANSans, sans-serif;
