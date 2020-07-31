@@ -1,4 +1,7 @@
 .app {
     width: 100%;
     padding: 10rem 0rem;
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }

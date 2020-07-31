@@ -1557,6 +1557,12 @@ section {
           animation: animation--hanging 900ms linear 1s infinite alternate;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .news__getaway > img {
+    width: 35rem;
+  }
+}
+
 .news__getaway > a {
   max-width: 20rem;
 }
@@ -1905,6 +1911,12 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem 15rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .count {
+    display: none;
+  }
 }
 
 .count__be-adviser {
@@ -2326,6 +2338,12 @@ section {
 .app {
   width: 100%;
   padding: 10rem 0rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .app {
+    padding: 0;
+  }
 }
 
 .video {

@@ -4,6 +4,10 @@
   padding: 3rem 15rem;
   $position-left: 25%;
 
+  @include respond(tab-port) {
+    display: none;
+  }
+
   &__be-adviser {
     position: absolute;
     left: $position-left + 13%;

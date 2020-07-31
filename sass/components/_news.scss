@@ -54,6 +54,9 @@
             width: 50rem;
             height: auto;
             animation: animation--hanging 900ms linear 1s infinite alternate;
+            @include respond(tab-port) {
+                width: 35rem;
+            }
         }
 
         &>a {
