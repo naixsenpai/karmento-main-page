@@ -1,70 +1,101 @@
 .email {
-    &__email {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0rem;
+  &__email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem;
 
-        &__title {
-            width: 80%;
-            padding: 1rem 3rem;
-            background-color: $color-orange;
+    &__title {
+      width: 80%;
+      padding: 1rem 3rem;
+      background-color: $color-orange;
 
-            @include round(20);
+      @include round(20);
 
-            &>p {
-                color: $color_white;
-                font-size: 2rem;
-            }
+      & > p {
+        color: $color_white;
+        font-size: 2rem;
+      }
 
-            &--blue {
-                background-color: $color_list_circle;
-                padding: 1rem;
-                width: 95%;
-            }
-        }
-
-        &__form {
-            margin-top: 1rem;
-            margin-right: 10rem;
-            display: flex;
-            align-items: center;
-            width: 80%;
-            // justify-content: flex-end;
-
-            &>button {
-                height: 7rem;
-                width: 15rem;
-                margin-left: 1rem;
-                @include round(20);
-            }
-
-            &>div {
-                height: 7rem;
-                &>input {
-                    width: 35%;
-                    text-align: left;
-                    @include round(15);
-                    direction: ltr;
-                }
-            }
-                
-        }
+      &--blue {
+        background-color: $color_list_circle;
+        padding: 1rem;
+        width: 95%;
+      }
     }
+
+    &__form {
+      margin-top: 1rem;
+      margin-right: 10rem;
+      display: flex;
+      align-items: center;
+      width: 80%;
+      // justify-content: flex-end;
+
+      & > button {
+        height: 7rem;
+        width: 15rem;
+        margin-left: 1rem;
+        @include round(20);
+      }
+
+      & > div {
+        height: 7rem;
+        & > input {
+          width: 35%;
+          text-align: left;
+          @include round(15);
+          direction: ltr;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1240px) {
-    .email {
-        &__email {
-            &__form {
-                &>button {
-                    height: 5rem;
-                }
-                &>div {
-                    height: unset;
-                }
-            }
+  .email {
+    &__email {
+      &__form {
+        & > button {
+          height: 5rem;
         }
+        & > div {
+          height: unset;
+        }
+      }
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .email {
+    &__phoneBorderStyle {
+      &--title {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        align-self: flex-start;
+        width: 90%;
+      }
+      &--form {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        & > input {
+          width: 60% !important;
+        }
+      }
+    }
+
+    &__email {
+      &__form {
+        align-self: flex-end;
+        margin: 1rem 0 0 0;
+        width: 90%;
+
+        & > button {
+          height: 6.3rem;
+        }
+      }
+    }
+  }
 }

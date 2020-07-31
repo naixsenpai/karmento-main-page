@@ -2,4 +2,7 @@
     width: 100%;
     margin-top: 5rem;
     padding: 3rem 5rem;
+    @include respond(phone) {
+        padding: 3rem 0;
+    }
 }

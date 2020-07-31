@@ -1480,6 +1480,32 @@ section {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .email__phoneBorderStyle--title {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 90%;
+  }
+  .email__phoneBorderStyle--form {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .email__phoneBorderStyle--form > input {
+    width: 60% !important;
+  }
+  .email__email__form {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 1rem 0 0 0;
+    width: 90%;
+  }
+  .email__email__form > button {
+    height: 6.3rem;
+  }
+}
+
 .btn {
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -2502,6 +2528,12 @@ section {
   width: 100%;
   margin-top: 5rem;
   padding: 3rem 5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .email {
+    padding: 3rem 0;
+  }
 }
 
 .news {
