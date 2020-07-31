@@ -6,6 +6,12 @@
     margin: 0 auto;
 
     border: 1px solid $color_border;
-    @include round(100);
     margin-bottom: 3rem;
+
+    @include round(100);
+
+    @include respond(phone) {
+        padding: 0;
+        border: none;
+    }
 }
