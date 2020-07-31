@@ -1560,6 +1560,7 @@ section {
 @media only screen and (max-width: 56.25em) {
   .news__getaway > img {
     width: 35rem;
+    left: -2.5rem;
   }
 }
 
