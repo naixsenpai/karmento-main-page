@@ -1,4 +1,10 @@
 .app {
+    &__mobile {
+        &>img {
+            width: 33.8rem;
+        }
+    }
+
     &__container {
         @include flexCenter;
 

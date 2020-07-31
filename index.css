@@ -983,6 +983,12 @@ section {
   z-index: 2;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .warranty > img {
+    display: none;
+  }
+}
+
 .warranty__message {
   width: 100%;
   z-index: 1;
@@ -1016,26 +1022,66 @@ section {
           align-items: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .warranty__message__main {
+    border-left: 1px solid #707070;
+    width: 50%;
+  }
+}
+
+.warranty__message__main > img {
+  display: none;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .warranty__message__main > img {
+    display: block;
+    position: absolute;
+    -webkit-transform: translateY(-11rem);
+            transform: translateY(-11rem);
+    width: auto;
+    height: 23rem;
+    margin-left: -1.5rem;
+    z-index: 2;
+  }
+}
+
 .warranty__message__main > p {
   text-align: center;
   font-size: 2.6rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .warranty__message__main > p {
+    margin: 15rem 0 3rem 0;
+  }
+}
+
 .warranty__message__other {
   height: 100%;
   overflow: auto;
-  border-right: 1px solid #707070;
   padding: 1rem;
+  border-right: 1px solid #707070;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .warranty__message__other {
+    border-right: none;
+  }
 }
 
 .warranty__message__other--header {
   font-size: 2.5rem !important;
   color: #EF5D24;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .warranty__message__other > p {
   font-size: 1.6rem;
+}
+
+.app__mobile > img {
+  width: 33.8rem;
 }
 
 .app__container {
@@ -2270,6 +2316,10 @@ section {
   .overlay__services {
     width: 100%;
     margin: 0;
+  }
+  .overlay__warranty {
+    margin-top: 5rem;
+    width: 95%;
   }
 }
 

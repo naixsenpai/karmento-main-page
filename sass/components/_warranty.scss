@@ -1,52 +1,87 @@
 .warranty {
+  width: 100%;
+  margin: 23rem auto 5rem auto;
+  @include flexCenter;
+
+  & > img {
+    width: auto;
+    height: 23rem;
+    margin-left: -1.5rem;
+    z-index: 2;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__message {
     width: 100%;
-    margin: 23rem auto 5rem auto;
+    z-index: 1;
+    border: 1px solid #707070;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(180, 180, 180, 1) 100%
+    );
+
     @include flexCenter;
+    @include round(60);
 
-    & > img {
-        width: auto;
-        height: 23rem;
-        margin-left: -1.5rem;
-        z-index: 2;
+    &__main {
+      width: 55%;
+      height: 100%;
+
+      @include flexCenter;
+
+      @include respond(tab-port) {
+        border-left: 1px solid #707070;
+        width: 50%;
+      }
+
+      & > img {
+        display: none;
+
+        @include respond(tab-port) {
+          display: block;
+          position: absolute;
+          transform: translateY(-11rem);
+          width: auto;
+          height: 23rem;
+          margin-left: -1.5rem;
+          z-index: 2;
+        }
+      }
+
+      & > p {
+        text-align: center;
+        font-size: 2.6rem;
+
+        @include respond(tab-port) {
+          margin: 15rem 0 3rem 0;
+        }
+      }
     }
 
-    &__message {
-        width: 100%;
-        z-index: 1;
-        border: 1px solid #707070;
+    &__other {
+      height: 100%;
+      overflow: auto;
+      padding: 1rem;
+      border-right: 1px solid #707070;
 
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(180,180,180,1) 100%);
+      @include respond(tab-port) {
+          border-right: none;
+      }
 
-        @include flexCenter;
-        @include round(60);
-
-        &__main {
-            width: 55%;
-            height: 100%;
-
-            @include flexCenter;
-
-            &>p {
-                text-align: center;
-                font-size: 2.6rem;
-            }
-        }
-
-        &__other {
-            height: 100%;
-            overflow: auto;
-            border-right: 1px solid #707070;
-            padding: 1rem;
-
-            &--header {
-                font-size: 2.5rem !important;
-                color: $color-orange;
-                margin-bottom: .5rem;
-            }
-            &>p {
-                font-size: 1.6rem;
-            }
-        }
+      &--header {
+        font-size: 2.5rem !important;
+        color: $color-orange;
+        margin-bottom: 0.5rem;
+      }
+      & > p {
+        font-size: 1.6rem;
+      }
     }
+  }
 }
