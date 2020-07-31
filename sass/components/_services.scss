@@ -3,6 +3,10 @@
   width: 100%;
   @include flexCenter;
 
+  @include respond(phone) {
+    @include flexColCenter;
+  }
+
   &__title {
     display: none;
     @include respond(tab-port) {
@@ -29,8 +33,16 @@
     margin: 0rem 3rem;
     position: relative;
 
+    @include respond(phone) {
+      margin: 0;
+      margin-bottom: 18rem;
+    }
+
     &--noLeftMargin {
       margin-left: 0;
+      @include respond(phone) {
+        margin-bottom: 0;
+      }
     }
 
     & > a {

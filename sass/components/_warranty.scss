@@ -27,7 +27,12 @@
     );
 
     @include flexCenter;
+
     @include round(60);
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
 
     &__main {
       width: 55%;
@@ -38,6 +43,12 @@
       @include respond(tab-port) {
         border-left: 1px solid #707070;
         width: 50%;
+      }
+
+      @include respond(phone) {
+        border-left: none;
+        border-bottom: 1px solid #707070;
+        width: 100%;
       }
 
       & > img {
@@ -72,6 +83,11 @@
 
       @include respond(tab-port) {
           border-right: none;
+      }
+
+      @include respond(phone) {
+          padding: 2.5rem;
+          // width: 100%; //optional
       }
 
       &--header {

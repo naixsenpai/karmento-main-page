@@ -2,6 +2,11 @@
 
     &__video {
         width: 60%;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
         &>iframe {
             display: block;
             width: 100%;
@@ -19,6 +24,11 @@
         align-items: flex-start;
 
         padding: 3rem 0 3rem 1.5rem;
+
+        @include respond(phone) {
+            width: 100%;
+            align-items: center;
+        }
 
         &>h3 {
             font-size: 2.5rem;

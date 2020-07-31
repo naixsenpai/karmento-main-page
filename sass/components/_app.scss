@@ -8,6 +8,10 @@
     &__container {
         @include flexCenter;
 
+        @include respond(phone) {
+            flex-direction: column;
+        }
+
         &__wrapper {
             width: 50%;
             @include flexColCenter;
@@ -16,6 +20,10 @@
                 margin-bottom: 1rem;
                 font-size: 3.5rem;
                 text-align: center;
+            }
+            @include respond(phone) {
+                width: 80%;
+                margin-top: 3rem;
             }
         }
     }
@@ -31,6 +39,11 @@
         grid-template-rows: repeat(2, 30rem);
         grid-auto-flow: column;
         grid-column-gap: 3rem;
+
+        @include respond(phone) {
+            align-self: flex-end;
+            padding: 3rem 0;
+        }
 
         &__category {
             width: 15rem;
