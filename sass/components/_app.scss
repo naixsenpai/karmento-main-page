@@ -1,5 +1,18 @@
 .app {
     &__mobile {
+        position: relative;
+
+        &__overlay {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            &>img {
+                width: 22rem;
+            }
+        }
+
         &>img {
             width: 33.8rem;
         }

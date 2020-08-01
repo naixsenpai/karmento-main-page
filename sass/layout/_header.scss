@@ -1,75 +1,84 @@
 .header {
+  width: 100%;
+  background-color: $color_primary;
+  padding: 1rem 2rem;
+
+  @include respond(big-desktop) {
+    padding: 1rem 7rem;
+  }
+
+  &__container {
     width: 100%;
-    background-color: $color_primary;
-    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__menu {
+      @include flexCenter;
+      &__logo {
+        & > svg {
+          width: 12rem;
+          height: auto;
+        }
+      }
+    }
+  }
 
+  &__navbar {
+    width: 100%;
+    display: none;
     @include respond(big-desktop) {
-        padding: 1rem 7rem;
+      @include flexCenter;
+    }
+  }
+
+  &__navigate {
+    display: flex;
+    min-width: 25rem;
+    background: $color-orange;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.7rem;
+    border: 0.3rem solid #393939;
+    cursor: pointer;
+
+    @include round(30);
+    @include pseudo(1);
+
+    &:hover {
+      &::after {
+        transform: translate(78%, -50%);
+        width: 55%;
+      }
+      & > a {
+        color: #133c73 !important;
+      }
+      .header__navigate--adviser {
+        color: #fff !important;
+      }
     }
 
-    &__container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &::after {
+      transition: transform 0.3s, width 0.3s;
+      z-index: 1;
+      width: 45%;
+      height: 95%;
+      background: $color-white;
+      left: 1%;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 0.2rem solid #707070;
+      @include round(30);
     }
 
-    &__navbar {
-        width: 100%;
-        display: none;
-        @include respond(big-desktop) {
-            @include flexCenter;
-        }
+    & > a {
+      z-index: 2;
+      transition: color 0.3s;
+      font-size: 2rem;
     }
 
-    &__navigate {
-        display: flex;
-        min-width: 25rem;
-        background: $color-orange;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem .7rem;
-        border: .3rem solid #393939;
-        cursor: pointer;
-
-        @include round(30);
-        @include pseudo(1);
-
-        &:hover {
-            &::after {
-                transform: translate(78%, -50%);
-                width: 55%;
-            }
-            &>a {
-                color: #133C73 !important;
-            }
-            .header__navigate--adviser {
-                color: #fff !important;
-            }
-        }
-
-        &::after {
-            transition: transform .3s, width .3s;
-            z-index: 1;
-            width: 45%;
-            height: 95%;
-            background: $color-white;
-            left: 1%;
-            top: 50%;
-            transform: translateY(-50%);
-            border: .2rem solid #707070;
-            @include round(30);
-        }
-
-        &>a {
-            z-index: 2;
-            transition: color .3s;
-            font-size: 2rem;
-        }
-
-        &--adviser {
-            margin-right: 2rem;
-            color: #133C73 !important;
-        }
+    &--adviser {
+      margin-right: 2rem;
+      color: #133c73 !important;
     }
+  }
 }
