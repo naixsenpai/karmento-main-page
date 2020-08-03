@@ -69,7 +69,7 @@
         &>img {
             top: -60%;
             position: absolute;
-            width: 50rem;
+            width: 45rem;
             height: auto;
             animation: animation--hanging 900ms linear 1s infinite alternate;
             @include respond(tab-port) {

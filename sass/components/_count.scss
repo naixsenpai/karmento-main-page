@@ -1,7 +1,7 @@
 .count {
   position: relative;
   @include flexCenter;
-  padding: 3rem 15rem;
+  padding: 3rem 10rem;
   $position-left: 25%;
 
   @include respond(tab-port) {

@@ -1,103 +1,68 @@
-.warranty {
+.new-warranty {
   width: 100%;
-  margin: 23rem auto 5rem auto;
-  @include flexCenter;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 
   & > img {
     width: auto;
     height: 23rem;
-    margin-left: -1.5rem;
+    position: absolute;
     z-index: 2;
-
-    @include respond(tab-port) {
-      display: none;
-    }
   }
 
   &__message {
-    width: 100%;
+    flex: 1;
+    margin-right: 16rem;
+    padding: 3rem 6rem 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #2182bb;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
     z-index: 1;
-    border: 1px solid #707070;
+    box-shadow: 1.5rem 2.9rem 3.2rem rgba($color: #000000, $alpha: 0.59);
 
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(180, 180, 180, 1) 100%
-    );
+    @include pseudo(1);
 
-    @include flexCenter;
-
-    @include round(60);
-
-    @include respond(phone) {
-      flex-direction: column;
+    &::after {
+      z-index: 1;
+      border: .4rem dashed #fff;
+      border-top-left-radius: 10rem;
+      border-bottom-left-radius: 10rem;
+      @include absCenter;
+      width: 98%;
+      height: 93%;
+      border-right: none;
     }
 
-    &__main {
-      width: 55%;
-      height: 100%;
-
-      @include flexCenter;
-
-      @include respond(tab-port) {
-        border-left: 1px solid #707070;
-        width: 50%;
-      }
+    & > p {
+      font-size: 2.5rem;
+      color: #fff;
 
       @include respond(phone) {
-        border-left: none;
-        border-bottom: 1px solid #707070;
-        width: 100%;
+        font-size: 2rem;
       }
 
-      & > img {
-        display: none;
+      & > span {
+        font-size: 4rem;
+        text-shadow: 0 0.6rem 0.6rem #000;
 
-        @include respond(tab-port) {
-          display: block;
-          position: absolute;
-          transform: translateY(-11rem);
-          width: auto;
-          height: 23rem;
-          margin-left: -1.5rem;
-          z-index: 2;
-        }
-      }
-
-      & > p {
-        text-align: center;
-        font-size: 2.6rem;
-
-        @include respond(tab-port) {
-          margin: 15rem 0 3rem 0;
+        @include respond(phone) {
+          font-size: 3rem;
         }
       }
     }
-
-    &__other {
-      height: 100%;
-      overflow: auto;
-      padding: 1rem;
-      border-right: 1px solid #707070;
-
-      @include respond(tab-port) {
-          border-right: none;
-      }
-
-      @include respond(phone) {
-          padding: 2.5rem;
-          // width: 100%; //optional
-      }
-
-      &--header {
-        font-size: 2.5rem !important;
-        color: $color-orange;
-        margin-bottom: 0.5rem;
-      }
-      & > p {
-        font-size: 1.6rem;
-      }
+    & > a {
+      margin-top: 2rem;
+      font-size: 2rem;
+      color: #ff9b74 !important;
+      align-self: flex-end;
     }
   }
 }
