@@ -1,0 +1,128 @@
+.sidenav {
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  transition: 1s;
+  transform: translateY(9rem);
+
+  &__border {
+    z-index: 2002;
+    position: inherit;
+    width: 100%;
+    height: 1.5rem;
+    background-color: #ef5d24;
+    box-shadow: 0 1rem 1.2rem rgba($color: #000000, $alpha: 0.8);
+  }
+
+  &__container {
+    position: inherit;
+    z-index: 2001;
+    height: 92%;
+    width: 375px;
+    background-color: #218cc3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 30rem;
+
+    @include respond(phone) {
+      width: 320px;
+    }
+
+    & > nav {
+      height: 65%;
+      width: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-top: 4rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      & > a {
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+        transition: all 300ms;
+
+        @include pseudo(2);
+
+        &:hover {
+          &::before {
+            background: rgb(239, 93, 36);
+            background: linear-gradient(
+              90deg,
+              rgba(239, 93, 36, 1) 0%,
+              rgba(255, 211, 1, 0.02) 70%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+        }
+
+        &::before {
+          transition: all 300ms;
+          z-index: -1;
+          background: none;
+        }
+      }
+    }
+
+    &__logo {
+      height: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 10rem;
+      padding-left: 0;
+      padding-top: 0;
+
+      @include respond(phone) {
+        padding-top: 5rem;
+        padding-left: 2rem;
+        padding-bottom: 0;
+      }
+
+      &__logo {
+        height: 13rem;
+        width: 13rem;
+        background-color: #fff;
+
+        @include round(circle);
+        @include flexCenter;
+        @include pseudo(2);
+
+        &::before {
+          z-index: -2;
+          @include round(circle);
+          @include absCenter;
+          @include round(circle);
+          width: 120%;
+          height: 120%;
+          background-color: #ef5d24;
+        }
+
+        &::after {
+          @include absCenter;
+          @include round(circle);
+          width: 110%;
+          height: 110%;
+          border: 0.3rem dashed #fff;
+        }
+
+        & > svg {
+          width: 10rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -491,6 +491,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-family: inherit;
 }
 
+html, body {
+  height: 100%;
+}
+
 html {
   font-size: 65.5%;
 }
@@ -2730,5 +2734,195 @@ section {
   .form {
     padding: 3rem;
   }
+}
+
+.sidenav {
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(9rem);
+          transform: translateY(9rem);
+}
+
+.sidenav__border {
+  z-index: 2002;
+  position: inherit;
+  width: 100%;
+  height: 1.5rem;
+  background-color: #ef5d24;
+  -webkit-box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, 0.8);
+          box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, 0.8);
+}
+
+.sidenav__container {
+  position: inherit;
+  z-index: 2001;
+  height: 92%;
+  width: 375px;
+  background-color: #218cc3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom-left-radius: 30rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sidenav__container {
+    width: 320px;
+  }
+}
+
+.sidenav__container > nav {
+  height: 65%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+}
+
+.sidenav__container > nav > a {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  position: relative;
+}
+
+.sidenav__container > nav > a::after, .sidenav__container > nav > a::before {
+  position: absolute;
+  content: "";
+  clear: both;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sidenav__container > nav > a:hover::before {
+  background: #ef5d24;
+  background: -webkit-gradient(linear, left top, right top, from(#ef5d24), color-stop(70%, rgba(255, 211, 1, 0.02)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, #ef5d24 0%, rgba(255, 211, 1, 0.02) 70%, rgba(255, 255, 255, 0) 100%);
+}
+
+.sidenav__container > nav > a::before {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  z-index: -1;
+  background: none;
+}
+
+.sidenav__container__logo {
+  height: 30%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10rem;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sidenav__container__logo {
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-bottom: 0;
+  }
+}
+
+.sidenav__container__logo__logo {
+  height: 13rem;
+  width: 13rem;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.sidenav__container__logo__logo::after, .sidenav__container__logo__logo::before {
+  position: absolute;
+  content: "";
+  clear: both;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sidenav__container__logo__logo::before {
+  z-index: -2;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 120%;
+  height: 120%;
+  background-color: #ef5d24;
+}
+
+.sidenav__container__logo__logo::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 110%;
+  height: 110%;
+  border: 0.3rem dashed #fff;
+}
+
+.sidenav__container__logo__logo > svg {
+  width: 10rem;
+  height: auto;
 }
 /*# sourceMappingURL=index.css.map */
