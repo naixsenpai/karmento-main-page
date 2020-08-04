@@ -491,7 +491,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-family: inherit;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -562,14 +563,16 @@ button:focus {
   outline: none;
 }
 
-input, textarea {
-  padding: .5rem 2rem;
+input,
+textarea {
+  padding: 0.5rem 2rem;
   font-size: 2rem;
   border: 1px solid #707070;
   border-radius: 2rem;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -579,6 +582,25 @@ textarea {
 
 section {
   width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #57a7d8;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #57a7d8), to(rgba(125, 243, 248, 0.692314)));
+  background: linear-gradient(0deg, #57a7d8 25%, rgba(125, 243, 248, 0.692314) 100%);
+  border-radius: 10px;
+  border: .1rem solid #707070;
 }
 
 .slider {
