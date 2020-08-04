@@ -2372,12 +2372,12 @@ section {
   width: 100%;
   background-color: #175F9B;
   z-index: 1000;
-  padding: 1rem 2rem;
+  padding: 0 1rem;
 }
 
 @media only screen and (min-width: 112.5em) {
   .header {
-    padding: 1rem 7rem;
+    padding: 0.5rem 7rem;
   }
 }
 
@@ -2413,21 +2413,15 @@ section {
 
 .header__navbar {
   width: 100%;
-  display: none;
-}
-
-@media only screen and (min-width: 112.5em) {
-  .header__navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__navigate {
@@ -2462,7 +2456,8 @@ section {
 .header__navigate:hover::after {
   -webkit-transform: translate(78%, -50%);
           transform: translate(78%, -50%);
-  width: 55%;
+  width: 56%;
+  left: .5%;
 }
 
 .header__navigate:hover > a {
@@ -2479,10 +2474,10 @@ section {
   transition: transform 0.3s, width 0.3s;
   transition: transform 0.3s, width 0.3s, -webkit-transform 0.3s;
   z-index: 1;
-  width: 45%;
-  height: 95%;
+  width: 47%;
+  height: 103%;
   background: #fff;
-  left: 1%;
+  left: -0.5%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2500,6 +2495,12 @@ section {
 .header__navigate--adviser {
   margin-right: 2rem;
   color: #133c73 !important;
+}
+
+@media only screen and (max-width: 1150px) {
+  .header__navbar {
+    display: none;
+  }
 }
 
 .overlay {
@@ -2785,19 +2786,109 @@ section {
   }
 }
 
+@-webkit-keyframes blurBackground__animation {
+  from {
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
+  to {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+}
+
+@keyframes blurBackground__animation {
+  from {
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
+  to {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .sidenav {
   z-index: 2000;
-  width: 0;
-  height: 100%;
+  width: 100%;
+  height: 0;
   position: fixed;
   background-color: transparent;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-transform: translateY(9rem);
-          transform: translateY(9rem);
+  -webkit-transform: translateY(7rem);
+          transform: translateY(7rem);
+}
+
+.sidenav__opacity {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.sidenav__opacity--reverse {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+
+.sidenav__blurBackground__animation {
+  -webkit-animation-name: blurBackground__animation;
+          animation-name: blurBackground__animation;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.sidenav__blurBackground__animation--reverse {
+  -webkit-animation-name: blurBackground__animation;
+          animation-name: blurBackground__animation;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-direction: reverse;
 }
 
 .sidenav__border {
@@ -2813,8 +2904,8 @@ section {
 .sidenav__container {
   position: inherit;
   z-index: 2001;
-  height: 92%;
-  width: 375px;
+  height: 91%;
+  width: 30rem;
   background-color: #218cc3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2832,13 +2923,10 @@ section {
   border-bottom-left-radius: 30rem;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .sidenav__container {
-    width: 320px;
-  }
-}
-
 .sidenav__container > nav {
+  opacity: 0;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
   height: 65%;
   width: 100%;
   overflow-y: auto;
@@ -2861,7 +2949,7 @@ section {
 }
 
 .sidenav__container > nav > a {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   width: 100%;
   text-align: center;
   -webkit-transition: all 300ms;
@@ -2904,16 +2992,12 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 10rem;
-  padding-left: 0;
-  padding-top: 0;
+  padding-left: 1rem;
 }
 
 @media only screen and (max-width: 37.5em) {
   .sidenav__container__logo {
-    padding-top: 5rem;
-    padding-left: 2rem;
-    padding-bottom: 0;
+    height: 25%;
   }
 }
 

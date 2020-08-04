@@ -22,10 +22,10 @@
   width: 100%;
   background-color: $color_primary;
   z-index: 1000;
-  padding: 1rem 2rem;
+  padding: 0 1rem;
 
   @include respond(big-desktop) {
-    padding: 1rem 7rem;
+    padding: 0.5rem 7rem;
   }
 
   &__container {
@@ -46,10 +46,7 @@
 
   &__navbar {
     width: 100%;
-    display: none;
-    @include respond(big-desktop) {
-      @include flexCenter;
-    }
+    @include flexCenter;
   }
 
   &__navigate {
@@ -68,7 +65,8 @@
     &:hover {
       &::after {
         transform: translate(78%, -50%);
-        width: 55%;
+        width: 56%;
+        left: .5%;
       }
       & > a {
         color: #133c73 !important;
@@ -81,10 +79,10 @@
     &::after {
       transition: transform 0.3s, width 0.3s;
       z-index: 1;
-      width: 45%;
-      height: 95%;
+      width: 47%;
+      height: 103%;
       background: $color-white;
-      left: 1%;
+      left: -0.5%;
       top: 50%;
       transform: translateY(-50%);
       border: 0.2rem solid #707070;
@@ -100,6 +98,14 @@
     &--adviser {
       margin-right: 2rem;
       color: #133c73 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .header {
+    &__navbar {
+      display: none;
     }
   }
 }
