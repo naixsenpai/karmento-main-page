@@ -499,6 +499,12 @@ html {
   font-size: 65.5%;
 }
 
+@media only screen and (max-width: 1460px) {
+  html {
+    font-size: 50.5%;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   html {
     font-size: 50.5%;
@@ -581,21 +587,15 @@ section {
   height: 11.5rem;
   background-repeat: no-repeat;
   background-position-y: 100%;
-  background-size: contain;
+  background-size: cover;
   position: relative;
-}
-
-@media only screen and (min-width: 112.5em) {
-  .slider {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
 }
 
 @media only screen and (max-width: 56.25em) {
   .slider {
     margin: 0 auto;
     width: 36rem;
+    background-size: contain;
   }
 }
 
@@ -604,10 +604,10 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%, -90%);
           transform: translate(-50%, -90%);
-  -webkit-transition: -webkit-transform z-index .3s;
-  transition: -webkit-transform z-index .3s;
-  transition: transform z-index .3s;
-  transition: transform z-index .3s, -webkit-transform z-index .3s;
+  -webkit-transition: -webkit-transform z-index 0.3s;
+  transition: -webkit-transform z-index 0.3s;
+  transition: transform z-index 0.3s;
+  transition: transform z-index 0.3s, -webkit-transform z-index 0.3s;
 }
 
 .slider > a > img {
@@ -793,8 +793,8 @@ section {
   }
   .services__title > svg {
     width: 18rem;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
   }
 }
 
@@ -883,15 +883,15 @@ section {
 .services__service > a > div > img {
   width: 90%;
   height: 90%;
-  -webkit-box-shadow: 0px 3px 20px #000;
-          box-shadow: 0px 3px 20px #000;
+  -webkit-box-shadow: 0 0.3rem 2rem #000;
+          box-shadow: 0 0.3rem 2rem #000;
   border-radius: 50%;
 }
 
 .services__service > a > div::after {
   width: 125%;
   height: 125%;
-  border: 5px dashed #EF5D24;
+  border: 0.5rem dashed #EF5D24;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -903,7 +903,7 @@ section {
 .services__service > a > div::before {
   width: 135%;
   height: 135%;
-  border: 2px solid #216CA9;
+  border: 0.2rem solid #216CA9;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -923,11 +923,11 @@ section {
   color: #000;
   min-width: 21rem;
   padding: 0.5rem 1.5rem;
-  border: 2px solid #2182BB;
+  border: 0.2rem solid #2182BB;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#f5e4d5));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f5e4d5 100%);
-  margin-top: 22px;
+  margin-top: 2.2rem;
   -webkit-box-shadow: none;
           box-shadow: none;
   position: relative;
@@ -947,7 +947,7 @@ section {
 .services__service > a > p::after {
   width: 108%;
   height: 100%;
-  border: 2px dashed #707070;
+  border: .2rem dashed #707070;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -971,8 +971,8 @@ section {
 }
 
 .services__service:hover > p, .services__service:focus > p {
-  -webkit-transform: translateY(45px);
-          transform: translateY(45px);
+  -webkit-transform: translateY(4.5rem);
+          transform: translateY(4.5rem);
 }
 
 .services__service:hover > a, .services__service:focus > a {
@@ -981,19 +981,47 @@ section {
 }
 
 .services__service:hover > a > p, .services__service:focus > a > p {
-  -webkit-box-shadow: 0px 60px 91px -7px rgba(96, 227, 253, 0.678);
-          box-shadow: 0px 60px 91px -7px rgba(96, 227, 253, 0.678);
+  -webkit-box-shadow: 0 6rem 9.1rem -0.7rem rgba(96, 227, 253, 0.678);
+          box-shadow: 0 6rem 9.1rem -0.7rem rgba(96, 227, 253, 0.678);
 }
 
 @media only screen and (max-width: 1240px) {
   .services {
-    margin: 28rem 5rem 0 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 90%;
+  }
+  .services__service {
+    width: 20%;
+  }
+  .services__service > a > div {
+    width: 8rem;
+    height: 8rem;
+  }
+  .services__service > a > p {
+    min-width: 17rem;
+    font-size: 2.5rem;
+    border-radius: 4rem;
+  }
+  .services__service > a > p::after {
+    border-radius: 4rem;
+  }
+  .services__service > p {
+    font-size: 1.5rem;
+    width: 18rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .services {
-    margin: 4rem 0 0 0;
+    margin: 4rem auto !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .services__service {
     width: unset;
@@ -2628,6 +2656,27 @@ section {
 @media only screen and (max-width: 56.25em) {
   .overlay__intro {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1799px) {
+  .overlay__intro {
+    width: 55rem;
+  }
+}
+
+@media only screen and (min-width: 1295px) {
+  .overlay__categories {
+    margin-top: 6rem;
+  }
+  .overlay__services {
+    margin-top: 14rem;
+  }
+}
+
+@media only screen and (min-width: 1244px) {
+  .overlay {
+    background-size: cover;
   }
 }
 

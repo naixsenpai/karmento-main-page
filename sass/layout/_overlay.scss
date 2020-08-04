@@ -100,6 +100,31 @@
   }
 }
 
+@media only screen and (min-width: 1799px) {
+  .overlay {
+    &__intro {
+      width: 55rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1295px) {
+  .overlay {
+    &__categories {
+      margin-top: 6rem;
+    }
+    &__services {
+      margin-top: 14rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1244px) {
+  .overlay {
+    background-size: cover;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   .overlay {
     &__services {
