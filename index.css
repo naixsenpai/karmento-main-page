@@ -2901,6 +2901,53 @@ section {
           box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, 0.8);
 }
 
+.sidenav__overlay {
+  width: 30rem;
+  position: absolute;
+  height: 91%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidenav__overlay > div {
+  height: 30%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sidenav__overlay > div {
+    height: 25%;
+  }
+}
+
+.sidenav__overlay > div > div {
+  height: 15rem;
+  width: 15rem;
+  background-color: #EF5D24;
+  left: 0;
+  border-radius: 50%;
+}
+
 .sidenav__container {
   position: inherit;
   z-index: 2001;
@@ -3026,20 +3073,6 @@ section {
   width: 100%;
   top: 0;
   left: 0;
-}
-
-.sidenav__container__logo__logo::before {
-  z-index: -2;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 50%;
-  width: 120%;
-  height: 120%;
-  background-color: #ef5d24;
 }
 
 .sidenav__container__logo__logo::after {

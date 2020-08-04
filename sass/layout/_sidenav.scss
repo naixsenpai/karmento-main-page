@@ -67,6 +67,33 @@
     box-shadow: 0 1rem 1.2rem rgba($color: #000000, $alpha: 0.8);
   }
 
+  &__overlay {
+    width: 30rem;
+    position: absolute;
+    height: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    & > div {
+      height: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @include respond(phone) {
+        height: 25%;
+      }
+      & > div {
+        height: 15rem;
+        width: 15rem;
+        background-color:#EF5D24;
+        left: 0;
+        border-radius: 50%;
+      }
+    }
+  }
+
   &__container {
     position: inherit;
     z-index: 2001;
@@ -143,15 +170,15 @@
         @include flexCenter;
         @include pseudo(2);
 
-        &::before {
-          z-index: -2;
-          @include round(circle);
-          @include absCenter;
-          @include round(circle);
-          width: 120%;
-          height: 120%;
-          background-color: #ef5d24;
-        }
+        // &::before {
+        //   z-index: -2;
+        //   @include round(circle);
+        //   @include absCenter;
+        //   @include round(circle);
+        //   width: 120%;
+        //   height: 120%;
+        //   background-color: #ef5d24;
+        // }
 
         &::after {
           @include absCenter;
