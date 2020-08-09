@@ -44,9 +44,10 @@
 
   &__new-warranty {
     width: 80%;
-    @include flexCenter;
-    margin: 10rem auto;
+    margin: 10rem 0;
     margin-top: 25rem;
+    display: flex;
+    align-items: center;
   }
 
   &__intro {
