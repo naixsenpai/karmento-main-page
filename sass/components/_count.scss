@@ -1,8 +1,11 @@
 .count {
+  margin-top: 15rem;
   position: relative;
   @include flexCenter;
   padding: 3rem 10rem;
-  $position-left: 25%;
+  padding-right: 50em;
+  padding-left: 15rem;
+  $position-left: 21.5%;
 
   @include respond(tab-port) {
     display: none;
@@ -10,7 +13,7 @@
 
   &__be-adviser {
     position: absolute;
-    left: $position-left + 13%;
+    left: $position-left + 12%;
     bottom: -20%;
     height: 12rem;
     width: 12rem;
@@ -41,8 +44,8 @@
     background-color: $color-white;
     border: 1.5rem solid $color_services_border--blue;
     color: #003b5e;
-    height: 25rem;
-    width: 25rem;
+    height: 23rem;
+    width: 23rem;
 
     @include round(circle);
     @include flexCenter;
@@ -51,8 +54,8 @@
       position: absolute;
       content: "";
       clear: both;
-      height: 120%;
-      width: 120%;
+      height: 117%;
+      width: 117%;
       border: .4rem dashed #2181ba;
       @include round(circle);
     }
@@ -61,9 +64,9 @@
       position: absolute;
       content: "";
       clear: both;
-      height: 137%;
-      width: 137%;
-      border: 1.5rem solid rgba($color: #ef5d24, $alpha: 0.85);
+      height: 132%;
+      width: 132%;
+      border: 2rem solid rgba($color: #ef5d24, $alpha: 0.85);
       background-color: rgba($color: $color-white, $alpha: 0.1);
       box-shadow: .7rem .7rem 2.5rem rgba($color: $color-black, $alpha: 0.54);
 
@@ -93,11 +96,11 @@
 
     & > p {
       color: $color_white;
-      font-size: 4.5rem;
+      font-size: 3.5rem;
     }
 
     &__unit {
-      font-size: 3.5rem !important;
+      font-size: 2.5rem !important;
     }
   }
 }
@@ -105,8 +108,9 @@
 @media only screen and (max-width: 1240px) {
   .count {
     padding: 3rem 5rem;
+    padding-right: 25rem;
     &__be-adviser {
-      left: 40%;
+      left: 38%;
     }
   }
 }
