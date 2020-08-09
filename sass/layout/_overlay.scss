@@ -20,6 +20,8 @@
   &__categories {
     margin-right: 3rem;
     width: 50%;
+    position: relative;
+
     @include respond(tab-port) {
       width: 70%;
       margin: 0 auto;
@@ -30,6 +32,7 @@
   }
 
   &__services {
+    z-index: 95;
     width: 45%;
   }
 

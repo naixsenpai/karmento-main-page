@@ -20,6 +20,31 @@
     }
   }
 
+  &__scroll_overlay {
+    position: absolute;
+    width: 6rem;
+    height: 100%;
+    z-index: 10;
+    &--left {
+      left: -1rem;
+      background: transparent;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    &--right {
+      right: -2rem;
+      background: transparent;
+      background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+
   &__category {
     margin-left: 1rem;
     width: auto;

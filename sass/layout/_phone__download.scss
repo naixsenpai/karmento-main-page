@@ -1,0 +1,23 @@
+.phone__download {
+    display: none;
+    @include respond(tab-port) {
+        display: block;
+    }
+
+    margin: 5rem 0;
+
+    &__container {
+        @include flexColCenter;
+        &>svg {
+            width: 32rem;
+            height: auto;
+        }
+    } 
+
+    &__apps {
+        margin-top: 2rem;
+        &>div {
+            gap: 1rem;
+        }
+    }
+}
