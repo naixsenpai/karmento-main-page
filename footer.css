@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.socila_media_links {
+}
+
+.socila_media_links nav {
+    background: #216AA7; 
+    margin: 5px 0;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.socila_media_links hr {
+    width: 100%;
+    border-top: .3rem solid #EF5D24;
+    margin: 0;
+}
+
+.footer__top__orange-border {
+    border-top: .6rem solid #EF5D24 !important;
+}
