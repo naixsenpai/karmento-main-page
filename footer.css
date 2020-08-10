@@ -9,6 +9,7 @@
 .socila_media_links nav {
     background: #216AA7; 
     margin: 5px 0;
+    margin-bottom: 0;
     padding: 5px 0;
     display: flex;
     justify-content: center;
@@ -18,10 +19,106 @@
 
 .socila_media_links hr {
     width: 100%;
+    border-top: .6rem solid #EF5D24;
+    margin: 0;
+}
+
+.footer__content {
+    padding: 5px 0;
+    background: #DDDEE1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content hr {
+    width: 100%;
     border-top: .3rem solid #EF5D24;
     margin: 0;
 }
 
-.footer__top__orange-border {
-    border-top: .6rem solid #EF5D24 !important;
+.footer__content__message {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__content__message p {
+    flex: 2;
+    color: #216AA7;
+    text-align: center;
+}
+
+.footer__content__message div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.footer__content__message div a {
+    width: 100%;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    border: 1px solid #216AA7;
+    max-width: 150px;
+}
+
+.footer__trust_signs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 15px;
+}
+
+.footer__trust_signs img {
+    width: 65px;
+    height: auto;
+}
+
+.footer__address__container {
+    width: 100%;
+    background: #216AA7;
+    padding-bottom: 5px;
+}
+
+.footer__address__call-address {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 5px;
+}
+
+.footer__address__call-address p {
+    color: #fff;
+}
+
+.footer__address__container p {
+    text-align: center;
+    color: #fff;
+}
+
+.footer__address__container hr {
+    border-top: 3px solid #EF5D24;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 900px) {
+    .footer__content__message {
+        padding: 10px 100px;
+    }
+    .footer__trust_signs img {
+        width: 100px;
+    }
 }
