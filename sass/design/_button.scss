@@ -1,68 +1,76 @@
 .btn {
-    transition: transform .3s;
-    padding: 1rem 3rem;
+  transition: transform 0.3s;
+  padding: 1rem 3rem;
+  color: $color_white;
+  font-size: 2rem;
+  text-decoration: none;
+
+  @include round(30);
+
+  &:hover {
+    color: $color-white !important;
+    transform: scale(1.1);
+  }
+
+  &--success {
+    background-color: $color_success;
+  }
+
+  &--primary {
+    background-color: $color_primary;
+
+    &--dark {
+      background-color: $color_primary_dark;
+    }
+  }
+
+  &--secondary {
+    background-color: $color_secondary;
+  }
+
+  &--link {
     color: $color_white;
-    font-size: 2rem;
-    text-decoration: none;
+    margin: 0rem 0.5rem;
+    padding: 0.6rem 2rem;
+    overflow: hidden;
+    @include round(round);
 
-    @include round(30);
-
-    &:hover {
-        color: $color-white !important;
-        transform: scale(1.1);
+    @include respond(big-desktop) {
+      margin: 0rem 1.5rem;
     }
 
-    &--success {
-        background-color: $color_success;
+    @include pseudo(1);
+
+    &::after {
+      z-index: -1;
+      height: 120%;
+      width: 120%;
+      transition: transform 300ms;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(239, 93, 36, 0.69) 100%
+      );
+      @include round(round);
+      @include absCenter;
+      transform: translate(-50%, 45%);
     }
 
-    &--primary {
-        background-color: $color_primary;
-
-        &--dark {
-            background-color: $color_primary_dark;
-        }
+    &:hover,
+    &:focus {
+      // background: $color-orange;
+      &::after {
+        transform: translate(-50%, -50%);
+      }
     }
 
-    &--secondary {
-        background-color: $color_secondary;
+    &--active {
+      border: 0.2rem solid $color-secondary;
     }
+  }
 
-    &--link {
-        color: $color_white;
-        margin: 0rem .5rem;
-        padding: .6rem 2rem;
-        overflow: hidden;
-        @include round(round);
-
-        @include respond(big-desktop) {
-            margin: 0rem 1.5rem;
-        }
-
-        @include pseudo(1);
-
-        &::after {
-            //z-index: -1;
-            transition: transform 300ms;
-            background-color: $color-orange;
-            @include round(round);
-            transform: translateY(110%);
-        }
-
-        &:hover,
-        &:focus {
-            background: $color-orange;
-            //&::after {
-            //    transform: translateY(0); todo: make this work
-            //}
-        }
-
-        &--active {
-            border: .4rem solid $color-secondary;
-        }
-    }
-
-    &--icon {
-        @include flexCenter;
-    }
+  &--icon {
+    @include flexCenter;
+  }
 }

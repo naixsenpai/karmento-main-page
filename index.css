@@ -573,23 +573,27 @@ section {
 }
 
 /* width */
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 1rem;
   height: 1rem;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: transparent;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #57a7d8;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #57a7d8), to(rgba(125, 243, 248, 0.692314)));
   background: linear-gradient(0deg, #57a7d8 25%, rgba(125, 243, 248, 0.692314) 100%);
   border-radius: 10px;
-  border: .1rem solid #707070;
+  border: 0.1rem solid #707070;
+}
+
+body::-webkit-scrollbar-track-piece {
+  background: #EF5D24;
 }
 
 .slider {
@@ -1650,10 +1654,10 @@ section {
 }
 
 .btn {
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   padding: 1rem 3rem;
   color: #fff;
   font-size: 2rem;
@@ -1685,8 +1689,8 @@ section {
 
 .btn--link {
   color: #fff;
-  margin: 0rem .5rem;
-  padding: .6rem 2rem;
+  margin: 0rem 0.5rem;
+  padding: 0.6rem 2rem;
   overflow: hidden;
   border-radius: 5rem;
   position: relative;
@@ -1709,22 +1713,33 @@ section {
 }
 
 .btn--link::after {
+  z-index: -1;
+  height: 120%;
+  width: 120%;
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
-  background-color: #EF5D24;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(239, 93, 36, 0.69)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(239, 93, 36, 0.69) 100%);
   border-radius: 5rem;
-  -webkit-transform: translateY(110%);
-          transform: translateY(110%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 45%);
+          transform: translate(-50%, 45%);
 }
 
-.btn--link:hover, .btn--link:focus {
-  background: #EF5D24;
+.btn--link:hover::after, .btn--link:focus::after {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .btn--link--active {
-  border: 0.4rem solid #EF5D24;
+  border: 0.2rem solid #EF5D24;
 }
 
 .btn--icon {
