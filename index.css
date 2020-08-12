@@ -1227,7 +1227,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .owl-item > img {
-  width: 33.5rem;
+  width: 33.5rem !important;
   border-radius: 5rem;
 }
 

@@ -18,7 +18,7 @@
     margin-right: 0 !important;
     width: 100% !important;
     & > img {
-      width: 33.5rem;
+      width: 33.5rem !important;
       @include round(50);
     }
   }
