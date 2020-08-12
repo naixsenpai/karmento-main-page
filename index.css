@@ -3087,6 +3087,13 @@ body::-webkit-scrollbar-track-piece {
           align-items: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .sidenav__overlay {
+    width: 45rem;
+    height: calc(100vh - 8rem);
+  }
+}
+
 .sidenav__overlay > div {
   height: 30%;
   width: 107%;
@@ -3110,9 +3117,16 @@ body::-webkit-scrollbar-track-piece {
 .sidenav__overlay > div > div {
   height: 16rem;
   width: 16rem;
-  background-color: #EF5D24;
+  background-color: #ef5d24;
   left: 0;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sidenav__overlay > div > div {
+    height: 24rem;
+    width: 24rem;
+  }
 }
 
 .sidenav__container {
@@ -3135,6 +3149,14 @@ body::-webkit-scrollbar-track-piece {
       -ms-flex-align: center;
           align-items: center;
   border-bottom-left-radius: 30rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sidenav__container {
+    width: 45rem;
+    border-bottom-left-radius: 45rem;
+    height: calc(100vh - 8rem);
+  }
 }
 
 .sidenav__container > nav {
@@ -3162,6 +3184,12 @@ body::-webkit-scrollbar-track-piece {
   gap: 2rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .sidenav__container > nav {
+    gap: 4rem;
+  }
+}
+
 .sidenav__container > nav > a {
   font-size: 3.2rem;
   width: 100%;
@@ -3179,6 +3207,12 @@ body::-webkit-scrollbar-track-piece {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sidenav__container > nav > a {
+    font-size: 4.2rem;
+  }
 }
 
 .sidenav__container > nav > a:hover::before {
@@ -3242,6 +3276,13 @@ body::-webkit-scrollbar-track-piece {
   left: 0;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .sidenav__container__logo__logo {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
 .sidenav__container__logo__logo::after {
   position: absolute;
   top: 50%;
@@ -3257,6 +3298,12 @@ body::-webkit-scrollbar-track-piece {
 .sidenav__container__logo__logo > svg {
   width: 10rem;
   height: auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .sidenav__container__logo__logo > svg {
+    width: 15rem;
+  }
 }
 
 .phone__download {
