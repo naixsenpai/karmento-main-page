@@ -1499,7 +1499,7 @@ body::-webkit-scrollbar-track-piece {
   }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 320px) {
   .app__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2688,12 +2688,12 @@ body::-webkit-scrollbar-track-piece {
 
 .overlay__downloads {
   display: none;
-  gap: 1rem;
+  gap: 3rem;
   margin: 12rem auto;
 }
 
 .overlay__downloads > a {
-  width: 15rem;
+  width: 12rem;
 }
 
 .overlay__downloads > a > svg {
