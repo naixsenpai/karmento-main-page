@@ -73,7 +73,7 @@
 
       &::after {
         display: none;
-        @include respond(phone) {
+        @include respond(tab-port) {
             display: block;
             position: absolute;
             width: 7rem;
@@ -144,6 +144,7 @@
       &:hover {
         .app__categories__category__subcategory {
           height: 48%;
+          opacity: 1;
         }
       }
 
@@ -154,6 +155,12 @@
         justify-content: flex-start;
         overflow: hidden;
         height: 0;
+        opacity: .2;
+
+        @include respond(tab-port) {
+          height: 48%;
+          opacity: 1;
+        }
 
         & > div {
           @include flexCenter;

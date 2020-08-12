@@ -9,6 +9,7 @@
 
   @include respond(tab-port) {
     overflow-x: auto;
+    min-height: 17rem;
   }
 
   &__logo {

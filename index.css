@@ -692,6 +692,7 @@ body::-webkit-scrollbar-track-piece {
 @media only screen and (max-width: 56.25em) {
   .categories {
     overflow-x: auto;
+    min-height: 17rem;
   }
 }
 
@@ -1296,7 +1297,7 @@ body::-webkit-scrollbar-track-piece {
   display: none;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .app__container__wrapper::after {
     display: block;
     position: absolute;
@@ -1384,6 +1385,7 @@ body::-webkit-scrollbar-track-piece {
 
 .app__categories__category:hover .app__categories__category__subcategory {
   height: 48%;
+  opacity: 1;
 }
 
 .app__categories__category__subcategory {
@@ -1408,6 +1410,14 @@ body::-webkit-scrollbar-track-piece {
           justify-content: flex-start;
   overflow: hidden;
   height: 0;
+  opacity: .2;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .app__categories__category__subcategory {
+    height: 48%;
+    opacity: 1;
+  }
 }
 
 .app__categories__category__subcategory > div {
