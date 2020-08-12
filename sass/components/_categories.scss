@@ -24,6 +24,9 @@
   &__scroll_overlay {
     position: absolute;
     width: 6rem;
+    @include respond(tab-port) {
+      height: 50% !important;
+    }
     &--left {
       left: -1rem;
       @include fog(left);

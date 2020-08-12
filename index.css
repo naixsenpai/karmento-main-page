@@ -737,6 +737,12 @@ body::-webkit-scrollbar-track-piece {
   width: 6rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .categories__scroll_overlay {
+    height: 50% !important;
+  }
+}
+
 .categories__scroll_overlay--left {
   left: -1rem;
   height: 100%;
@@ -2670,7 +2676,41 @@ body::-webkit-scrollbar-track-piece {
 
 @media only screen and (max-width: 56.25em) {
   .overlay {
+    background-image: none;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .overlay {
     background-image: url("/assets/image/phone-slider.png");
+  }
+}
+
+.overlay__downloads {
+  display: none;
+  gap: 1rem;
+  margin: 12rem auto;
+}
+
+.overlay__downloads > a {
+  width: 15rem;
+}
+
+.overlay__downloads > a > svg {
+  width: 100%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .overlay__downloads {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2699,7 +2739,7 @@ body::-webkit-scrollbar-track-piece {
 @media only screen and (max-width: 56.25em) {
   .overlay__categories {
     width: 70%;
-    margin: 0 auto;
+    margin: 5rem auto;
   }
 }
 

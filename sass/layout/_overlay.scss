@@ -7,7 +7,28 @@
   margin-bottom: 5rem;
 
   @include respond(tab-port) {
+    background-image: none;
+  }
+
+  @include respond(phone) {
     background-image: url("/assets/image/phone-slider.png");
+  }
+
+  &__downloads {
+    display: none;
+    gap: 1rem;
+    margin: 12rem auto;
+
+    &>a {
+      width: 15rem;
+      &>svg {
+        width: 100%;
+      }
+    }
+
+    @include respond(tab-port) {
+      @include flexCenter;
+    }
   }
 
   &__slider {
@@ -28,7 +49,7 @@
 
     @include respond(tab-port) {
       width: 70%;
-      margin: 0 auto;
+      margin: 5rem auto;
     }
 
     @include respond(phone) {
