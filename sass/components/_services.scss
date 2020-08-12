@@ -49,73 +49,14 @@
       transition: transform 0.3s;
       width: 100%;
       @include flexColCenter;
+      @include pseudo(1);
 
-      & > div {
-        @include pseudo(2);
-        width: 11rem;
-        height: 11rem;
+      &::after {
 
-        @include flexCenter;
-
-        & > img {
-          width: 90%;
-          height: 90%;
-          box-shadow: 0 0.3rem 2rem $color_black;
-          @include round(circle);
-        }
-
-        &::after {
-          width: 125%;
-          height: 125%;
-          border: 0.5rem dashed $color_services_border;
-
-          @include absCenter;
-          @include round(circle);
-        }
-
-        &::before {
-          width: 135%;
-          height: 135%;
-          border: 0.2rem solid $color_services_border--blue;
-
-          @include absCenter;
-          @include round(circle);
-        }
       }
 
-      & > p {
-        transition: box-shadow 0.3s;
-        font-size: 3rem;
-        text-align: center;
-        font-weight: bold;
-        color: $color_black;
-        min-width: 21rem;
-
-        padding: 0.5rem 1.5rem;
-        border: 0.2rem solid $color_services_button--blue;
-        background: rgb(255, 255, 255);
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(245, 228, 213, 1) 100%
-        );
-        margin-top: 2.2rem;
-
-        box-shadow: none;
-
-        @include pseudo(1);
-        @include round(20);
-
-        &::after {
-          width: 108%;
-          height: 100%;
-          border: 0.2rem dashed #707070;
-
-          @include absCenter;
-          @include round(20);
-
-          transform: translate(-50%, -50%) scale(0.9);
-        }
+      &>img {
+        width: 20rem;
       }
     }
 
@@ -138,8 +79,8 @@
       }
       & > a {
         transform: scale(1.1);
-        & > p {
-          box-shadow: 0 6rem 9.1rem -0.7rem rgba(96, 227, 253, 0.678);
+        &::after {
+          // box-shadow: 0 6rem 9.1rem -0.7rem rgba(96, 227, 253, 0.678);
         }
       }
     }
@@ -154,10 +95,6 @@
     &__service {
       width: 20%;
       & > a {
-        & > div {
-          width: 8rem;
-          height: 8rem;
-        }
         & > p {
           min-width: 17rem;
           font-size: 2.5rem;
