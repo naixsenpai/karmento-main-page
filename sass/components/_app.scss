@@ -66,7 +66,7 @@
     &__wrapper {
       width: 50%;
       @include flexColCenter;
-      padding-right: 2rem;
+      // padding-right: 2rem;
       position: relative;
 
       @include pseudo(1);
@@ -117,10 +117,14 @@
       align-items: center;
 
       & > p {
-        max-width: 10rem;
+        max-width: 100%;
         text-align: center;
         color: $color-black;
-        margin-top: 0.5rem;
+        margin: 1rem 0;
+        font-size: 2.5rem;
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
       }
 
       &__icon {
@@ -137,16 +141,29 @@
         }
       }
 
+      &:hover {
+        .app__categories__category__subcategory {
+          height: 48%;
+        }
+      }
+
       &__subcategory {
+        transition: 500ms;
         width: 100%;
         @include flexColCenter;
+        justify-content: flex-start;
+        overflow: hidden;
+        height: 0;
 
         & > div {
           @include flexCenter;
 
           & > p {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             color: $color-title-category;
+            @include respond(tab-port) {
+              font-size: 1.5rem;
+            }
           }
 
           & > span {

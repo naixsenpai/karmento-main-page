@@ -3,7 +3,7 @@
   position: relative;
   @include flexCenter;
   padding: 3rem 10rem;
-  padding-right: 50em;
+  padding-right: 60rem;
   padding-left: 15rem;
   $position-left: 21.5%;
 
@@ -54,9 +54,9 @@
       position: absolute;
       content: "";
       clear: both;
-      height: 117%;
-      width: 117%;
-      border: .4rem dashed #2181ba;
+      height: 120%;
+      width: 120%;
+      border: .4rem dashed #fff;
       @include round(circle);
     }
 
