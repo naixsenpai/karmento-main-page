@@ -2670,7 +2670,7 @@ section {
 }
 
 .overlay__intro {
-  margin: 0rem auto 0 3rem;
+  margin: 0 auto 0 10rem;
   width: 30rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2757,23 +2757,24 @@ section {
 }
 
 @media only screen and (min-width: 1295px) {
+  .overlay {
+    padding-top: 10rem;
+  }
+  .overlay__slider {
+    margin-right: 18rem;
+  }
   .overlay__categories {
     margin-top: 6rem;
   }
   .overlay__services {
-    margin-top: 14rem;
-  }
-}
-
-@media only screen and (min-width: 1244px) {
-  .overlay {
-    background-size: cover;
+    margin-top: 25rem;
   }
 }
 
 @media only screen and (max-width: 1240px) {
   .overlay__services {
     width: 75%;
+    margin-right: 5rem;
   }
 }
 
