@@ -614,6 +614,12 @@ body::-webkit-scrollbar-track-piece {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .slider {
+    width: 100%;
+  }
+}
+
 .slider > a {
   position: absolute;
   left: 50%;
@@ -668,6 +674,17 @@ body::-webkit-scrollbar-track-piece {
   .slider > a:nth-child(3) {
     -webkit-animation: slider__3--phone 9s linear infinite;
             animation: slider__3--phone 9s linear infinite;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .slider > a {
+    top: -2rem;
+  }
+  .slider > a > img {
+    height: 45rem;
+    width: 45rem;
+    border-radius: 2.5rem;
   }
 }
 
@@ -2653,7 +2670,7 @@ body::-webkit-scrollbar-track-piece {
 
 @media only screen and (max-width: 56.25em) {
   .overlay {
-    background-image: none;
+    background-image: url("/assets/image/phone-slider.png");
   }
 }
 
@@ -2664,6 +2681,12 @@ body::-webkit-scrollbar-track-piece {
 @media only screen and (max-width: 56.25em) {
   .overlay__slider {
     margin-top: 23rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .overlay__slider {
+    margin-top: 45rem;
   }
 }
 

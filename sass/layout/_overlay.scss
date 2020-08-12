@@ -7,13 +7,16 @@
   margin-bottom: 5rem;
 
   @include respond(tab-port) {
-    background-image: none;
+    background-image: url("/assets/image/phone-slider.png");
   }
 
   &__slider {
     margin-top: 10rem;
     @include respond(tab-port) {
       margin-top: 23rem;
+    }
+    @include respond(phone) {
+      margin-top: 45rem;
     }
   }
 
