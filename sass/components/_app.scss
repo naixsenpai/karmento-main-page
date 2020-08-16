@@ -71,7 +71,6 @@
     &__wrapper {
       width: 50%;
       @include flexColCenter;
-      // padding-right: 2rem;
       position: relative;
 
       @include pseudo(1);

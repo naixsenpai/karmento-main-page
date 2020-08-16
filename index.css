@@ -2060,6 +2060,7 @@ body::-webkit-scrollbar-track-piece {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2070,9 +2071,9 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .form__container__board {
-  min-width: 60rem;
-  width: 60rem;
-  height: 60rem;
+  min-width: 50rem;
+  width: 50rem;
+  height: 50rem;
 }
 
 @media only screen and (max-width: 37.5em) {

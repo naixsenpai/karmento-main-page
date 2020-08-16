@@ -50,6 +50,7 @@
                 display: flex;
                 justify-content: flex-end;
                 margin-top: 1rem;
+                margin-left: 1rem;
                 &>button {
                     @include respond(phone) {
                         width: 98%;
@@ -60,9 +61,9 @@
         }
 
         &__board {
-            min-width: 60rem;
-            width: 60rem;
-            height: 60rem;
+            min-width: 50rem;
+            width: 50rem;
+            height: 50rem;
 
             @include respond(phone) {
                 @include flexCenter;
