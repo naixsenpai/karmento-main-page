@@ -3191,8 +3191,8 @@ body::-webkit-scrollbar-track-piece {
   width: 118%;
   height: 185%;
   left: -5.1rem;
-  top: -2.9rem;
-  z-index: 100;
+  top: -3.2rem;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 37.5em) {

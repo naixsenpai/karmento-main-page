@@ -169,8 +169,8 @@
           width: 118%;
           height: 185%;
           left: -5.1rem;
-          top: -2.9rem;
-          z-index: 100;
+          top: -3.2rem;
+          z-index: -1;
 
           @include respond(phone) {
             top: -4.9rem;
