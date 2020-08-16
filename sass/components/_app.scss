@@ -27,6 +27,11 @@
 .app {
   &__mobile {
     position: relative;
+    transform: scale(.9);
+
+    @include respond(tab-port) {
+      transform: scale(1);
+    }
 
     &__overlay {
       position: absolute;
@@ -94,14 +99,24 @@
   &__categories {
     width: 100%;
     overflow: auto;
+    transition: all 500ms;
 
     margin-right: 5rem;
     padding: 3rem;
 
     display: grid;
-    grid-template-rows: repeat(2, 30rem);
+    grid-template-rows: repeat(2, 20rem);
     grid-auto-flow: column;
     grid-column-gap: 3rem;
+
+    // fix
+    &:hover {
+      grid-template-rows: repeat(2, 30rem);
+    }
+    
+    @include respond(tab-port) {
+      grid-template-rows: repeat(2, 30rem);
+    }
 
     @include respond(phone) {
       align-self: flex-end;
@@ -142,6 +157,9 @@
       }
 
       &:hover {
+        .app__categories {
+          grid-template-rows: repeat(2, 30rem);
+        }
         .app__categories__category__subcategory {
           height: 48%;
           opacity: 1;

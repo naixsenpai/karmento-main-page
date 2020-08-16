@@ -1136,6 +1136,15 @@ body::-webkit-scrollbar-track-piece {
 
 .app__mobile {
   position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .app__mobile {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .app__mobile__overlay {
@@ -1247,14 +1256,28 @@ body::-webkit-scrollbar-track-piece {
 .app__categories {
   width: 100%;
   overflow: auto;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
   margin-right: 5rem;
   padding: 3rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (30rem)[2];
-      grid-template-rows: repeat(2, 30rem);
+  -ms-grid-rows: (20rem)[2];
+      grid-template-rows: repeat(2, 20rem);
   grid-auto-flow: column;
   grid-column-gap: 3rem;
+}
+
+.app__categories:hover {
+  -ms-grid-rows: (30rem)[2];
+      grid-template-rows: repeat(2, 30rem);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .app__categories {
+    -ms-grid-rows: (30rem)[2];
+        grid-template-rows: repeat(2, 30rem);
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1307,6 +1330,11 @@ body::-webkit-scrollbar-track-piece {
 .app__categories__category__icon > img {
   width: 100%;
   height: 100%;
+}
+
+.app__categories__category:hover .app__categories {
+  -ms-grid-rows: (30rem)[2];
+      grid-template-rows: repeat(2, 30rem);
 }
 
 .app__categories__category:hover .app__categories__category__subcategory {
@@ -3015,7 +3043,7 @@ body::-webkit-scrollbar-track-piece {
 .sidenav__overlay {
   width: 30rem;
   position: absolute;
-  height: 91%;
+  height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3076,7 +3104,7 @@ body::-webkit-scrollbar-track-piece {
 .sidenav__container {
   position: inherit;
   z-index: 2001;
-  height: 91%;
+  height: 85%;
   width: 30rem;
   background-color: #218cc3;
   display: -webkit-box;
@@ -3243,7 +3271,7 @@ body::-webkit-scrollbar-track-piece {
   border-radius: 50%;
   width: 110%;
   height: 110%;
-  border: 0.3rem dashed #fff;
+  border: 0.3rem dotted #fff;
 }
 
 .sidenav__container__logo__logo > svg {
