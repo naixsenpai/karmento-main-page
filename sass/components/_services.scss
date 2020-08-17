@@ -49,10 +49,49 @@
       transition: transform 0.3s;
       width: 100%;
       @include flexColCenter;
-      @include pseudo(1);
 
-      &>img {
-        width: 20rem;
+      & > div {
+        @include flexCenter;
+        @include pseudo(1);
+
+        width: 12rem;
+        height: 12rem;
+        padding: 1.5rem;
+        border-radius: 100px;
+
+        margin-bottom: 0.7rem;
+
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23EF5D24FF' stroke-width='5' stroke-dasharray='3%2c2.9' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+
+        &::after {
+          @include absCenter;
+          width: 110%;
+          height: 110%;
+          border: 0.2rem solid #216ca9;
+          border-radius: 10rem;
+        }
+
+        & > img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      & > p {
+        font-size: 3rem;
+        color: #000;
+        padding: 0.5rem 1.5rem;
+        border: 0.2rem solid #2182bb;
+        border-radius: 2rem;
+        min-width: 20rem;
+        text-align: center;
+
+        background: rgba(255, 255, 255, 0);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 74%,
+          rgba(33, 130, 187, 0.4009978991596639) 100%
+        );
       }
     }
 
@@ -75,9 +114,9 @@
       }
       & > a {
         transform: scale(1.1);
-        // &::after {
-        //   box-shadow: 0 6rem 9.1rem -0.7rem rgba(96, 227, 253, 0.678);
-        // }
+        & > p {
+          box-shadow: 0 6rem 9.1rem -0.7rem rgba(96, 227, 253, 0.678);
+        }
       }
     }
   }
@@ -91,14 +130,6 @@
     &__service {
       width: 20%;
       & > a {
-        & > p {
-          min-width: 17rem;
-          font-size: 2.5rem;
-          border-radius: 4rem;
-          &::after {
-            border-radius: 4rem;
-          }
-        }
       }
       & > p {
         font-size: 1.5rem;
