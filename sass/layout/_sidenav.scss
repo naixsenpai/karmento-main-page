@@ -78,7 +78,7 @@
 
     @include respond(phone) {
       width: 45rem;
-      height: calc(100vh - 8rem);
+      height: calc(100vh - 12rem);
     }
 
     & > div {
@@ -120,7 +120,7 @@
     @include respond(phone) {
       width: 45rem;
       border-bottom-left-radius: 45rem;
-      height: calc(100vh - 8rem);
+      height: calc(100vh - 12rem);
     }
 
     & > nav {
