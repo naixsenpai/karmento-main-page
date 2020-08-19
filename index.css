@@ -2062,7 +2062,7 @@ body::-webkit-scrollbar-track-piece {
 .form__container__form__opinion > textarea {
   max-width: 100%;
   width: 100%;
-  resize: vertical;
+  resize: none;
   height: 35rem;
   max-height: 35rem;
 }
@@ -2744,7 +2744,7 @@ body::-webkit-scrollbar-track-piece {
 .overlay__new-warranty {
   width: 80%;
   margin: 10rem 0;
-  margin-top: 25rem;
+  margin-top: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
