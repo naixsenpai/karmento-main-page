@@ -2230,6 +2230,12 @@ body::-webkit-scrollbar-track-piece {
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .adviser {
+    display: none;
+  }
+}
+
 .adviser__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2257,6 +2263,7 @@ body::-webkit-scrollbar-track-piece {
 .adviser__list__chosen {
   width: 15rem;
   height: 100%;
+  margin-right: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2268,9 +2275,16 @@ body::-webkit-scrollbar-track-piece {
           align-items: center;
 }
 
+.adviser__list__chosen > img {
+  height: 13.5rem;
+  width: 13.5rem;
+  border: .5rem solid #216CA9;
+  border-radius: 50%;
+}
+
 .adviser__list__list {
-  width: calc(100vw - 85rem);
-  overflow: hidden;
+  width: calc(100vw - 81rem);
+  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2285,6 +2299,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .adviser__list__list > img {
+  cursor: pointer;
   height: 11rem;
   width: 11rem;
   border: .5rem solid #707070;
@@ -2292,6 +2307,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .adviser__list__next {
+  cursor: pointer;
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 7rem;

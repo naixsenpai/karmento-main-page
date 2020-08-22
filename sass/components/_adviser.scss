@@ -1,5 +1,8 @@
 .adviser {
     margin-top: 3rem;
+    @include respond(tab-port) {
+        display: none;
+    }
     
     &__container {
         display: flex;
@@ -19,13 +22,21 @@
         &__chosen {
             width: 15rem;
             height: 100%;
+            margin-right: 3rem;
 
             @include flexCenter;
+
+            &>img {
+                height: 13.5rem;
+                width: 13.5rem;
+                border: .5rem solid #216CA9;
+                @include round(circle);
+            }
         }
 
         &__list {
-            width: calc(100vw - 85rem);
-            overflow: hidden;
+            width: calc(100vw - 81rem);
+            overflow: auto;
             display: flex;
             align-items: center;
             padding: 0rem 1rem;
@@ -35,6 +46,7 @@
             }
 
             &>img {
+                cursor: pointer;
                 height: 11rem;
                 width: 11rem;
                 border: .5rem solid #707070;
@@ -43,6 +55,7 @@
         }
 
         &__next {
+            cursor: pointer;
             align-self: flex-end;
             width: 7rem;
             height: 100%;
