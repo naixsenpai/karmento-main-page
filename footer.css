@@ -3,9 +3,6 @@
     margin-top: 15px;
 }
 
-.socila_media_links {
-}
-
 .socila_media_links nav {
     background: #216AA7; 
     margin: 5px 0;
@@ -38,21 +35,30 @@
     margin: 0;
 }
 
+.footer__content__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+}
+
 .footer__content__message {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .footer__content__message p {
-    flex: 2;
+    flex: 1;
     color: #216AA7;
     text-align: center;
 }
 
-.footer__content__message div {
-    flex: 1;
+.footer__content__container div {
+    min-width: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,7 +68,7 @@
     margin-left: 10px;
 }
 
-.footer__content__message div a {
+.footer__content__container div a {
     width: 100%;
     background: #fff;
     border-radius: 25px;
@@ -83,7 +89,7 @@
 }
 
 .footer__trust_signs img {
-    width: 65px;
+    width: 45px;
     height: auto;
 }
 
@@ -117,6 +123,9 @@
 }
 
 @media only screen and (min-width: 900px) {
+    .footer {
+        display: none;
+    }
     .footer__content__message {
         padding: 10px 100px;
     }
