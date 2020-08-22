@@ -2230,7 +2230,7 @@ body::-webkit-scrollbar-track-piece {
   margin-top: 3rem;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 37.5em) {
   .adviser {
     display: none;
   }
@@ -3488,5 +3488,115 @@ body::-webkit-scrollbar-track-piece {
 
 .phone__download__apps > div {
   gap: 1rem;
+}
+
+.phone_adviser {
+  display: none;
+  background-image: url("/assets/image/phone-adviser.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 30vh;
+  position: relative;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .phone_adviser {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.phone_adviser__btn {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  -webkit-box-shadow: 0 .3rem .6rem #000;
+          box-shadow: 0 .3rem .6rem #000;
+}
+
+.phone_adviser__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 4rem;
+  margin-top: 6rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  border: .5rem solid #216CA9;
+  position: relative;
+}
+
+.phone_adviser__avatar::after {
+  position: absolute;
+  content: "";
+  clear: both;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.phone_adviser__avatar::after {
+  border-radius: 50%;
+  border: .4rem solid #EF5D24;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 109%;
+  width: 109%;
+}
+
+.phone_adviser__avatar__inner {
+  height: 93%;
+  width: 93%;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #EF5D24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone_adviser__avatar__inner > img {
+  width: 95%;
+  height: 95%;
+}
+
+.phone_adviser__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2rem 4rem;
+  margin-top: 6rem;
+}
+
+.phone_adviser__info > p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.phone_adviser__info--title {
+  font-size: 2.5rem !important;
 }
 /*# sourceMappingURL=index.css.map */

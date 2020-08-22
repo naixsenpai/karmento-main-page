@@ -1,0 +1,67 @@
+.phone_adviser {
+    display: none;
+    background-image: url('/assets/image/phone-adviser.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    position: relative;
+    @include respond(phone) {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+        box-shadow: 0 .3rem .6rem #000;
+    }
+
+    &__avatar {
+        @include flexCenter;
+        margin-right: 4rem;
+        margin-top: 6rem;
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        border: .5rem solid #216CA9;
+        @include pseudo(1);
+        
+        &::after {
+            border-radius: 50%;
+            border: .4rem solid #EF5D24;
+            @include absCenter;
+            height: 109%;
+            width: 109%;
+        }
+        
+        &__inner {
+            height: 93%;
+            width: 93%;
+            border-radius: 50%;
+            background: #fff;
+            border: 1px solid #EF5D24;
+            @include flexCenter;
+
+            &>img {
+                width: 95%;
+                height: 95%;
+            }
+        }
+    }
+
+    &__info {
+        flex: 1;
+        padding: 2rem 4rem;
+        margin-top: 6rem;
+        &>p {
+            color: #fff;
+            font-size: 2rem;
+        }
+        &--title {
+            font-size: 2.5rem !important;
+        }
+    }
+}

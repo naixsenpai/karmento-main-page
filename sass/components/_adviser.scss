@@ -1,6 +1,6 @@
 .adviser {
     margin-top: 3rem;
-    @include respond(tab-port) {
+    @include respond(phone) {
         display: none;
     }
     
