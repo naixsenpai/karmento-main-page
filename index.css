@@ -2165,6 +2165,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .form__container__sideboard {
+  max-width: 85rem;
   margin-left: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
