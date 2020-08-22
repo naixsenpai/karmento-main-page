@@ -3579,6 +3579,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .phone_adviser__avatar__inner > img {
+  border-radius: 50%;
   width: 95%;
   height: 95%;
 }

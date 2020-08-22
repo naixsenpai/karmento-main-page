@@ -44,8 +44,9 @@
             background: #fff;
             border: 1px solid #EF5D24;
             @include flexCenter;
-
+            
             &>img {
+                border-radius: 50%;
                 width: 95%;
                 height: 95%;
             }
