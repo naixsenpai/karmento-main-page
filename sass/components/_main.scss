@@ -122,3 +122,13 @@ body::-webkit-scrollbar-track-piece {
   background: $color-orange;
   // border-radius: 10px;
 }
+
+
+.visible {
+  &--phone {
+    display: none;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+}

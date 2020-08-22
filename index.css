@@ -596,6 +596,16 @@ body::-webkit-scrollbar-track-piece {
   background: #EF5D24;
 }
 
+.visible--phone {
+  display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .visible--phone {
+    display: block;
+  }
+}
+
 .slider {
   background-image: url("/assets/image/slider_bottom.png");
   width: 76rem;
@@ -1764,10 +1774,6 @@ body::-webkit-scrollbar-track-piece {
 .btn--link:hover::after, .btn--link:focus::after {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.btn--link--active {
-  border: 0.2rem solid #EF5D24;
 }
 
 .btn--icon {
