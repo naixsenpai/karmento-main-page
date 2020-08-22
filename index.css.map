@@ -35,7 +35,8 @@
         "sass/layout/_feedback.scss",
         "sass/layout/_form.scss",
         "sass/layout/_sidenav.scss",
-        "sass/layout/_phone__download.scss"
+        "sass/layout/_phone__download.scss",
+        "sass/layout/_phone_adviser.scss"
     ],
     "names": [],
     "file": "index.css"
