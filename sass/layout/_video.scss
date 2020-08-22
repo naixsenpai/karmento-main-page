@@ -3,6 +3,7 @@
     background-color: $color_bg;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 5rem;
     @include respond(phone) {
         flex-direction: column-reverse;
