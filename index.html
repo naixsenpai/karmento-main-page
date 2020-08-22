@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Karmento</title>
   </head>
 
@@ -729,7 +730,7 @@
           <div class="services__service">
             <a>
               <div>
-                <img src="assets/image/project.png" alt="">
+                <img src="assets/image/project.png" alt="" />
               </div>
               <p>انجام پروژه</p>
             </a>
@@ -741,7 +742,7 @@
           <div class="services__service">
             <a>
               <div>
-                <img src="assets/image/phone.png" alt="">
+                <img src="assets/image/phone.png" alt="" />
               </div>
               <p>مشاوره تلفنی</p>
             </a>
@@ -753,7 +754,7 @@
           <div class="services__service">
             <a>
               <div>
-                <img src="assets/image/question.png" alt="">
+                <img src="assets/image/question.png" alt="" />
               </div>
               <p>مشاوره رایگان</p>
             </a>
@@ -826,9 +827,21 @@
             <img src="assets/image/phone-overlay.png" alt="" />
           </div>
           <div class="app__mobile__slider owl-carousel owl-theme">
-            <img style="width: 0;" src="assets/image/iphone-slide1.jpg" alt="" />
-            <img style="width: 0;" src="assets/image/iphone-slide2.jpg" alt="" />
-            <img style="width: 0;" src="assets/image/iphone-slide3.jpg" alt="" />
+            <img
+              style="width: 0;"
+              src="assets/image/iphone-slide1.jpg"
+              alt=""
+            />
+            <img
+              style="width: 0;"
+              src="assets/image/iphone-slide2.jpg"
+              alt=""
+            />
+            <img
+              style="width: 0;"
+              src="assets/image/iphone-slide3.jpg"
+              alt=""
+            />
           </div>
           <img src="assets/image/mobile.png" alt="" />
         </div>
@@ -1306,55 +1319,47 @@
         </div>
       </div>
     </section>
-    <!-- <section class="feedback">
-        <img src="assets/image/feedback_bg.png" class="feedback__bg feedback__bg--top" />
-        <img src="assets/image/feedback_bg.png" class="feedback__bg feedback__bg--down" />
-        <div class="feedback__header">
-            <div class="feedback__header__logo">
-                <img src="assets/image/logo.png" />
-            </div>
-            <div class="feedback__header__title">
-                <h3>نظرات کاربران</h3>
-            </div>
+    <section class="feedback">
+      <img
+        src="assets/image/feedback_bg.png"
+        class="feedback__bg feedback__bg--top"
+      />
+      <img
+        src="assets/image/feedback_bg.png"
+        class="feedback__bg feedback__bg--down"
+      />
+      <div class="feedback__header">
+        <div class="feedback__header__logo">
+          <img src="assets/image/logo.png" />
         </div>
-        <div class="feedback__list">
-            <div class="feedback__list__element">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum sapiente suscipit optio
-                    autem nisi quam quidem inventore harum. Reiciendis numquam temporibus aliquid! Facere accusamus
-                    nesciunt voluptatem sit repudiandae possimus?</p>
-            </div>
-            <div class="feedback__list__element">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum sapiente suscipit optio
-                    autem nisi quam quidem inventore harum. Reiciendis numquam temporibus aliquid! Facere accusamus
-                    nesciunt voluptatem sit repudiandae possimus?</p>
-            </div>
-            <div class="feedback__list__element">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum sapiente suscipit optio
-                    autem nisi quam quidem inventore harum. Reiciendis numquam temporibus aliquid! Facere accusamus
-                    nesciunt voluptatem sit repudiandae possimus?</p>
-            </div>
-            <div class="feedback__list__element">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum sapiente suscipit optio
-                    autem nisi quam quidem inventore harum. Reiciendis numquam temporibus aliquid! Facere accusamus
-                    nesciunt voluptatem sit repudiandae possimus?</p>
-            </div>
-            <div class="feedback__list__element">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum sapiente suscipit optio
-                    autem nisi quam quidem inventore harum. Reiciendis numquam temporibus aliquid! Facere accusamus
-                    nesciunt voluptatem sit repudiandae possimus?</p>
-            </div>
-            <div class="feedback__list__element">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum sapiente suscipit optio
-                    autem nisi quam quidem inventore harum. Reiciendis numquam temporibus aliquid! Facere accusamus
-                    nesciunt voluptatem sit repudiandae possimus?</p>
-            </div>
-            <div class="feedback__list__element">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum sapiente suscipit optio
-                    autem nisi quam quidem inventore harum. Reiciendis numquam temporibus aliquid! Facere accusamus
-                    nesciunt voluptatem sit repudiandae possimus?</p>
-            </div>
+        <div class="feedback__header__title">
+          <h3>نظرات کاربران</h3>
         </div>
-    </section> -->
+      </div>
+      <div class="main-carousel" id="feedback" data-flickity='{"autoPlay": true }' >
+        <div class="carousel-cell feedback__list__element">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repudiandae libero dolorum ad reprehenderit, nisi dolor magnam nobis velit earum explicabo aspernatur laboriosam alias nulla, dolore enim id ducimus asperiores.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell feedback__list__element">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repudiandae libero dolorum ad reprehenderit, nisi dolor magnam nobis velit earum explicabo aspernatur laboriosam alias nulla, dolore enim id ducimus asperiores.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell feedback__list__element">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repudiandae libero dolorum ad reprehenderit, nisi dolor magnam nobis velit earum explicabo aspernatur laboriosam alias nulla, dolore enim id ducimus asperiores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="form">
       <div class="form__container">
         <div class="form__container__sideboard">
@@ -1431,7 +1436,7 @@
             </div>
         </div>
     </section> -->
-    
+
     <footer class="footer">
       <div class="socila_media_links">
         <hr class="footer__top__orange-border" />
@@ -1535,16 +1540,32 @@
               اولین اپلیکیشن تخصصی کسب و کار فعالیت خود را در حوزه‌های مالی و
               مالیاتی، بیمه و قانون کار، امور حقوقی، دیجیتال مارکتینگ، بورس و
               سرمایه گذاری، کسب و کار، امور ثبتی، برنامه نویسی و طراحی آغاز کرده
-              است و خدمات خود را در قالب مشاوره رایگان، مشاوره تلفنی و تعریف پروژه
-              به صاحبان مشاغل و کارفرمایان ارائه میدهد.
+              است و خدمات خود را در قالب مشاوره رایگان، مشاوره تلفنی و تعریف
+              پروژه به صاحبان مشاغل و کارفرمایان ارائه میدهد.
             </p>
             <div class="footer__trust_signs">
-              <img id="jxlzrgvjjxlzfukzapfufukz" style="cursor: pointer" 
-              onclick="window.open(
-                'https://logo.samandehi.ir/Verify.aspx?id=131656&amp;p=rfthxlaorfthgvkadshwgvka&quot;, &quot;Popup&quot;,&quot;toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30&quot;'
-              )" alt="logo-samandehi" src="https://logo.samandehi.ir/logo.aspx?id=131656&amp;p=nbpdqftinbpdwlbqujynwlbq">
-              <img src="https://karmento.ir/images/logo_kasbokar.png" alt="" onclick="window.open('https://ecunion.ir/verify/karmento.ir?token=51147515c1de1ac86650', 'Popup','toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30')" style="cursor: pointer;">
-              <img src="https://trustseal.enamad.ir/logo.aspx?id=113188&amp;p=MgDea0OGpc4FbzGi" alt="logo_enamad" onclick="window.open('https://trustseal.enamad.ir/Verify.aspx?id=113188&amp;p=MgDea0OGpc4FbzGi', 'Popup','toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30')" style="cursor:pointer" id="MgDea0OGpc4FbzGi">
+              <img
+                id="jxlzrgvjjxlzfukzapfufukz"
+                style="cursor: pointer;"
+                onclick='window.open(
+                &apos;https://logo.samandehi.ir/Verify.aspx?id=131656&amp;p=rfthxlaorfthgvkadshwgvka", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30"&apos;
+              )'
+                alt="logo-samandehi"
+                src="https://logo.samandehi.ir/logo.aspx?id=131656&amp;p=nbpdqftinbpdwlbqujynwlbq"
+              />
+              <img
+                src="https://karmento.ir/images/logo_kasbokar.png"
+                alt=""
+                onclick="window.open('https://ecunion.ir/verify/karmento.ir?token=51147515c1de1ac86650', 'Popup','toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30')"
+                style="cursor: pointer;"
+              />
+              <img
+                src="https://trustseal.enamad.ir/logo.aspx?id=113188&amp;p=MgDea0OGpc4FbzGi"
+                alt="logo_enamad"
+                onclick="window.open('https://trustseal.enamad.ir/Verify.aspx?id=113188&amp;p=MgDea0OGpc4FbzGi', 'Popup','toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30')"
+                style="cursor: pointer;"
+                id="MgDea0OGpc4FbzGi"
+              />
             </div>
           </div>
         </div>
@@ -1552,9 +1573,12 @@
       <div class="footer__address__container">
         <div class="footer__address__call-address">
           <p>تلفن تماس: ۴۹۲۰۲۰۲۰-۰۲۱</p>
-          <p>پست الکترونیک:  info@karmento.ir</p>
+          <p>پست الکترونیک: info@karmento.ir</p>
         </div>
-        <p>آدرس: تهران، بزرگراه اشرفی اصفهانی، بالاتر از صادقیه، نرسیده به بلوار مرزداران، بن بست گلها، پلاک ۳، واحد ۱۸</p>
+        <p>
+          آدرس: تهران، بزرگراه اشرفی اصفهانی، بالاتر از صادقیه، نرسیده به بلوار
+          مرزداران، بن بست گلها، پلاک ۳، واحد ۱۸
+        </p>
         <hr />
       </div>
     </footer>
@@ -1571,5 +1595,7 @@
     <script src="js/owl/owl.index.js"></script>
     <script src="js/header.js"></script>
     <script src="js/sidenav.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/feedback.js"></script>
   </body>
 </html>

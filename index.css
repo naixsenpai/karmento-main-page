@@ -1942,6 +1942,10 @@ body::-webkit-scrollbar-track-piece {
   display: block;
 }
 
+.main-carousel {
+  margin: 7rem 0;
+}
+
 .feedback__list {
   width: 100%;
   display: -webkit-box;
@@ -1955,8 +1959,6 @@ body::-webkit-scrollbar-track-piece {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 5rem;
-  height: 75vh;
-  overflow: auto;
 }
 
 .feedback__list :not(:last-child) {
@@ -1965,6 +1967,17 @@ body::-webkit-scrollbar-track-piece {
 
 .feedback__list__element {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 7rem;
+}
+
+.feedback__list__element > div {
   border: 0.2rem solid #707070;
   padding: 2rem;
   border-radius: 2rem;
@@ -3047,7 +3060,6 @@ body::-webkit-scrollbar-track-piece {
 .feedback {
   position: relative;
   width: 100%;
-  min-height: 100vh;
 }
 
 .form {
