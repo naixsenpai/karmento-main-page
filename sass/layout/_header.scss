@@ -49,6 +49,32 @@
     @include flexCenter;
   }
 
+  &__new-navigate {
+    @include flexCenter;
+    min-width: 27rem;
+
+    &>a {
+      font-size: 2rem;
+      padding: .5rem 1.5rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+    
+    &--login {
+      transition: 300ms;
+      background: #fff;
+      border-radius: 5rem;
+      color: #175F9B !important;
+      margin-left: 1rem;
+      &:hover {
+        box-shadow: 0 .3rem .6rem #000;
+        transform: translateY(-.2rem);
+      }
+    }
+  }
+
   &__navigate {
     display: flex;
     min-width: 25rem;
