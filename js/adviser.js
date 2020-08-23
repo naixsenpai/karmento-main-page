@@ -19,26 +19,6 @@ const advisers = [
         pic: 'https://karmento.ir/upload/images/avatar/2020/14/300x300_92635-600_855567-20200221_134650.jpg',
         title: 'دیجیتال مارکتینگ'
     },
-    {
-        name: 'محمد غیاثی',
-        pic: 'https://karmento.ir/upload/images/profile/2019/19/300_790264IMG-20190512-WA0002~2.jpg',
-        title: 'حسابداری'
-    },
-    {
-        name: 'زهرا مومنی',
-        pic: 'https://karmento.ir/upload/images/avatar/2020/14/300x300_92635-600_855567-20200221_134650.jpg',
-        title: 'دیجیتال مارکتینگ'
-    },
-    {
-        name: 'محمد غیاثی',
-        pic: 'https://karmento.ir/upload/images/profile/2019/19/300_790264IMG-20190512-WA0002~2.jpg',
-        title: 'حسابداری'
-    },
-    {
-        name: 'زهرا مومنی',
-        pic: 'https://karmento.ir/upload/images/avatar/2020/14/300x300_92635-600_855567-20200221_134650.jpg',
-        title: 'دیجیتال مارکتینگ'
-    },
 ]
 
 const name = $('#adviser__chosen__name');
@@ -65,12 +45,6 @@ function initialData() {
 }
 
 initialData();
-
-function showAdviser(element) {
-    const id = $(element).data('id');
-    change(id);
-    clearInterval(automaticChange);
-}
 
 var current = 1;
 
