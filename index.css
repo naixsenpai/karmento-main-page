@@ -1650,6 +1650,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .email__email__form > div > input {
+  height: 100%;
   width: 35%;
   text-align: left;
   border-radius: 1.5rem;
@@ -1975,6 +1976,7 @@ body::-webkit-scrollbar-track-piece {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 7rem;
+  z-index: 9;
 }
 
 .feedback__list__element > div {
@@ -2027,6 +2029,7 @@ body::-webkit-scrollbar-track-piece {
   position: absolute;
   width: 7rem;
   height: auto;
+  z-index: 10;
 }
 
 .feedback__bg--top {

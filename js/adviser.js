@@ -14,6 +14,7 @@ list.children().map((__, element) => {
 });
 
 list.niceScroll();
+// $('body').niceScroll();
 
 function change(index) {
     name.text(advisers[index].name);

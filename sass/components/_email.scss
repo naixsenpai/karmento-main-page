@@ -43,6 +43,7 @@
       & > div {
         height: 7rem;
         & > input {
+          height: 100%;
           width: 35%;
           text-align: left;
           @include round(15);
