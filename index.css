@@ -2400,6 +2400,25 @@ body::-webkit-scrollbar-track-piece {
   width: 100%;
 }
 
+.adviser__information__category {
+  margin-top: .3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.adviser__information__category > p {
+  color: #003B5E;
+  background-color: rgba(255, 255, 255, 0.76);
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  padding: .5rem .7rem;
+}
+
 .count {
   margin-top: 15rem;
   position: relative;
@@ -3619,5 +3638,24 @@ body::-webkit-scrollbar-track-piece {
 
 .phone_adviser__info--title {
   font-size: 2.5rem !important;
+}
+
+.phone_adviser__info__category {
+  margin-top: .3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.phone_adviser__info__category > p {
+  color: #003B5E;
+  background-color: rgba(255, 255, 255, 0.76);
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  padding: .5rem .7rem;
 }
 /*# sourceMappingURL=index.css.map */

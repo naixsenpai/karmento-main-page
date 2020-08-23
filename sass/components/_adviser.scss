@@ -107,5 +107,21 @@
             text-align: right;
             width: 100%;
         }
+
+        &__category {
+            margin-top: .3rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+
+            &>p {
+                color: #003B5E;
+                background-color: rgba($color: #FFFFFF, $alpha: .76);
+                font-size: 1.5rem;
+                border-radius: 5rem;
+                padding: .5rem .7rem;
+            }
+        }
     }
 }
