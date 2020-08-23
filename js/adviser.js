@@ -1,6 +1,6 @@
 const name = $('#adviser__chosen__name');
 const title = $('#adviser__chosen__title');
-const avatar = $('#adviser__chosen__img');
+// const avatar = $('#adviser__chosen__img');
 const list = $('#adviser__list');
 const advisers = [];
 
@@ -13,13 +13,19 @@ list.children().map((__, element) => {
     })
 });
 
-list.niceScroll();
+// list.niceScroll();
 // $('body').niceScroll();
 
 function change(index) {
     name.text(advisers[index].name);
     title.text(advisers[index].title);
-    avatar.attr('src', advisers[index].pic);
+    // avatar.attr('src', advisers[index].pic);
+}
+
+function changeListOrder() {
+    const element = list.children()[0];
+    list.children()[0].remove();
+    list.append(element);
 }
 
 function initialData() {
@@ -32,8 +38,9 @@ var current = 1;
 
 const automaticChange = setInterval(function() {
     change(current);
+    changeListOrder();
     current = current + 1;
     if (current == advisers.length) {
         current = 0;
     }
-}, 3000);
+}, 3500);

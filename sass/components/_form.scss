@@ -4,6 +4,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 5rem;
 
         @include respond(phone) {
             flex-direction: column;
@@ -60,9 +61,8 @@
             }
         }
         &__board {
-            min-width: 57rem;
-            width: 57rem;
-            height: 57rem;
+            width: 32rem;
+            height: 32rem;
 
             @include respond(phone) {
                 @include flexCenter;
@@ -103,21 +103,21 @@
             }
 
             &>a {
-                width: 95%;
                 &>img {
-                    width: 100%;
-                    height: auto;
+                    width: 50rem;
+                    height: 14rem;
                     @include round(40);
                 }
             }
 
             &--upper {
-                max-height: 27rem !important;
                 margin-bottom: 3rem;
             }
             
             &--lower {
-                max-height: 30rem !important;
+                @include respond(phone) {
+                    margin-bottom: 3rem;
+                }
             }
         }
     }

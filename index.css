@@ -1980,9 +1980,17 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .feedback__list__element > div {
+  width: 65%;
   border: 0.2rem solid #707070;
   padding: 2rem;
+  margin: 0 auto;
   border-radius: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .feedback__list__element > div {
+    width: 100%;
+  }
 }
 
 .feedback__list__element > p {
@@ -2055,6 +2063,7 @@ body::-webkit-scrollbar-track-piece {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 5rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2136,9 +2145,8 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .form__container__board {
-  min-width: 57rem;
-  width: 57rem;
-  height: 57rem;
+  width: 32rem;
+  height: 32rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2204,23 +2212,20 @@ body::-webkit-scrollbar-track-piece {
   }
 }
 
-.form__container__sideboard > a {
-  width: 95%;
-}
-
 .form__container__sideboard > a > img {
-  width: 100%;
-  height: auto;
+  width: 50rem;
+  height: 14rem;
   border-radius: 4rem;
 }
 
 .form__container__sideboard--upper {
-  max-height: 27rem !important;
   margin-bottom: 3rem;
 }
 
-.form__container__sideboard--lower {
-  max-height: 30rem !important;
+@media only screen and (max-width: 37.5em) {
+  .form__container__sideboard--lower {
+    margin-bottom: 3rem;
+  }
 }
 
 @media only screen and (max-width: 357px) {
@@ -2286,8 +2291,8 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .adviser__list__list {
-  width: calc(100vw - 81rem);
-  overflow: auto;
+  width: calc(100vw - 61.1rem);
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2301,11 +2306,24 @@ body::-webkit-scrollbar-track-piece {
   margin-left: 1rem;
 }
 
+.adviser__list__list :nth-child(1) {
+  height: 13.5rem;
+  width: 13.5rem;
+  border: .5rem solid #216CA9;
+}
+
+.adviser__list__list :nth-child(2) {
+  margin: 0 3rem 0 1rem;
+}
+
 .adviser__list__list > img {
+  -webkit-transition: margin 500ms;
+  transition: margin 500ms;
   height: 11rem;
   width: 11rem;
   border: .5rem solid #707070;
   border-radius: 50%;
+  margin: 0;
 }
 
 .adviser__list__next {

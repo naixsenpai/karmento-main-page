@@ -26,9 +26,15 @@
             z-index: 9;
             
             &>div {
+                width: 65%;
                 border: .2rem solid $color_border;
                 padding: 2rem;
+                margin: 0 auto;
+                
                 @include round(20);
+                @include respond(phone) {
+                    width: 100%;
+                }
             }
 
             &>p {
