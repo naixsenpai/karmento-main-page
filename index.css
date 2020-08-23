@@ -773,7 +773,6 @@ body::-webkit-scrollbar-track-piece {
 
 .categories__category {
   margin-left: 1rem;
-  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3119,7 +3118,7 @@ body::-webkit-scrollbar-track-piece {
 
 .form {
   width: 100%;
-  padding: 3rem 7rem;
+  padding: 0 7rem;
 }
 
 @media only screen and (max-width: 37.5em) {

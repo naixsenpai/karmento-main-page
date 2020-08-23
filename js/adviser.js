@@ -14,7 +14,6 @@ list.children().map((__, element) => {
     })
 });
 
-
 function change(index) {
     name.text(advisers[index].name);
     title.text(advisers[index].title);

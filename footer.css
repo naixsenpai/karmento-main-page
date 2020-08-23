@@ -58,14 +58,13 @@
 }
 
 .footer__content__container div {
-    min-width: 120px;
+    min-width: 145px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 0 10px;
-    margin-left: 10px;
 }
 
 .footer__content__container div a {

@@ -1,4 +1,5 @@
 const categoryElement = $('#overlay__categories');
+const categoryElements = $('#overlay__categoriess');
 
 for (var i = 1; i < categoryElement.children().length; i++) {
     categoryElement.children().eq(i).css(
@@ -10,21 +11,10 @@ for (var i = 1; i < categoryElement.children().length; i++) {
     )
 }
 
-// categoryElement.on('click', function(e){
 
-//     if (e.pageX / categoryElement.width() >= 1.6) {
-//         categoryElement.animate({ scrollLeft: categoryElement.offset().top}, 3000)
-//     } 
-//     if (e.pageX / categoryElement.width() <= 1.2) {
-//         categoryElement.animate({ scrollLeft: categoryElement.offset().top * -1}, 3000)
-//     }
-// })
-
-categoryElement.on('mouseenter', function(e){
-    if (e.pageX / categoryElement.width() >= 1.6) {
-        categoryElement.animate({ scrollLeft: categoryElement.offset().top}, 3000)
-    } 
-    if (e.pageX / categoryElement.width() <= 1.2) {
-        categoryElement.animate({ scrollLeft: categoryElement.offset().top * -1}, 3000)
-    }
-})
+categoryElements.flickity({
+    freeScroll: true,
+    contain: true,
+    prevNextButtons: false,
+    pageDots: false
+});
