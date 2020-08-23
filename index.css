@@ -2299,7 +2299,6 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .adviser__list__list > img {
-  cursor: pointer;
   height: 11rem;
   width: 11rem;
   border: .5rem solid #707070;
