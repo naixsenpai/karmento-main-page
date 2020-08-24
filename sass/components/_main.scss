@@ -57,6 +57,7 @@ a {
   color: $color_white !important;
   &:hover {
     cursor: pointer;
+    text-decoration: none;
   }
   & > p {
     color: $color-white;
