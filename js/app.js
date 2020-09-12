@@ -15,7 +15,7 @@ for (var i = 0; i < categories.children().length; i++) {
 }
 
 $(document).on('scroll', function() {
-    if($(this).scrollTop() - 1100 >= $('#app__categories').position().top){
+    if($(this).scrollTop() - 2000 >= $('#app__categories').position().top){
         for (var i = 0; i < categories.children().length; i++) {
             categories.children().eq(i).css(
                 {

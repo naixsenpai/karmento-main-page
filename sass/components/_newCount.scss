@@ -1,0 +1,115 @@
+@keyframes newCountAppear {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.newCount {
+    width: 100%;
+    margin-bottom: 10rem;
+    transform: translateY(-27rem);
+    transition: transform 300ms;
+    position: relative;
+    z-index: 48;
+
+    &__container {
+        margin: 0 auto;
+        width: 85%;
+        height: 20rem;
+        max-height: 20rem;
+        min-height: 20rem;
+        background: rgb(21, 107, 151);
+        background: linear-gradient(180deg, rgba(21, 107, 151, 1) 0%, rgba(21, 92, 151, 1) 100%);
+        border-bottom-left-radius: 20rem;
+        border-bottom-right-radius: 20rem;
+
+        @include pseudo(2);
+
+        &::after {
+            @include absCenter;
+            width: 102%;
+            height: 107%;
+            top: 53%;
+            border: 1rem solid #ef5d24;
+            border-top: none;
+            border-bottom-left-radius: 21rem;
+            border-bottom-right-radius: 21rem;
+            z-index: -1;
+        }
+
+        &::before {
+            z-index: -1;
+            @include absCenter;
+            width: 109%;
+            height: 129%;
+            top: 64%;
+            border: 3rem solid #cecece;
+            border-top: none;
+            border-bottom-left-radius: 25rem;
+            border-bottom-right-radius: 25rem;
+            box-shadow: 0 0rem 2rem -0.3rem rgb(0, 0, 0);
+        }
+
+        &__content {
+            width: 90%;
+            margin: 0 auto;
+            position: absolute;
+            @include absCenter;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            top: 90%;
+        }
+    }
+
+    &__counter {
+        @include flexColCenter;
+
+        & > p {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 3rem;
+        }
+
+        & > div {
+            transition: transform 500ms;
+            height: 18rem;
+            width: 18rem;
+            border-radius: 50%;
+            background: #043e66;
+            @include flexColCenter;
+            justify-content: space-evenly !important;
+            @include pseudo(1);
+            position: relative;
+            transform: scale(0);
+
+            &::after {
+                @include absCenter;
+                border: 0.7rem solid #fff;
+                border-radius: 50%;
+                width: 112%;
+                height: 112%;
+                box-shadow: 0 0.7rem 1.5rem 0rem rgba($color: #000000, $alpha: 0.84);
+            }
+
+            & > svg {
+                transition: opacity 2000ms;
+                position: absolute;
+                top: 1rem;
+                width: 3rem;
+                height: auto;
+                opacity: 0;
+            }
+            & > p {
+                color: #fff;
+                font-size: 3rem;
+                font-size: 6rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+.font-size--3 {
+    font-size: 3rem !important;
+}
