@@ -1,0 +1,47 @@
+.categoriesSlider {
+    background-color: #e3e3e3;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0 !important;
+
+    &__scroll_overlay {
+        position: absolute;
+        width: 30rem;
+        @include respond(tab-port) {
+            height: 50% !important;
+        }
+        &--left {
+            left: 0;
+            @include fog(left);
+        }
+        &--right {
+            right: 0;
+            @include fog(right);
+        }
+    }
+
+    &__list {
+        width: 100%;
+        padding: 4rem 0;
+        margin-bottom: 0 !important;
+    }
+
+    &__link {
+        margin: 0rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        & > img {
+            width: 30rem;
+            height: auto;
+            border-radius: 4rem;
+        }
+        & > span {
+            margin-top: 1rem;
+            color: #707070;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}

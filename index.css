@@ -1898,9 +1898,8 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .news__getaway > img {
-  top: -60%;
-  position: absolute;
-  width: 45rem;
+  margin-bottom: 5rem;
+  width: 25rem;
   height: auto;
   -webkit-animation: animation--hanging 900ms linear 1s infinite alternate;
           animation: animation--hanging 900ms linear 1s infinite alternate;
@@ -1908,8 +1907,7 @@ body::-webkit-scrollbar-track-piece {
 
 @media only screen and (max-width: 56.25em) {
   .news__getaway > img {
-    width: 35rem;
-    left: -2.5rem;
+    width: 20rem;
   }
 }
 
@@ -2582,6 +2580,77 @@ body::-webkit-scrollbar-track-piece {
   .count__be-adviser {
     left: 37.5%;
   }
+}
+
+.categoriesSlider {
+  background-color: #e3e3e3;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
+.categoriesSlider__scroll_overlay {
+  position: absolute;
+  width: 30rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .categoriesSlider__scroll_overlay {
+    height: 50% !important;
+  }
+}
+
+.categoriesSlider__scroll_overlay--left {
+  left: 0;
+  height: 100%;
+  z-index: 10;
+  background: transparent;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.categoriesSlider__scroll_overlay--right {
+  right: 0;
+  height: 100%;
+  z-index: 10;
+  background: transparent;
+  background: -webkit-gradient(linear, right top, left top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.categoriesSlider__list {
+  width: 100%;
+  padding: 4rem 0;
+  margin-bottom: 0 !important;
+}
+
+.categoriesSlider__link {
+  margin: 0rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.categoriesSlider__link > img {
+  width: 30rem;
+  height: auto;
+  border-radius: 4rem;
+}
+
+.categoriesSlider__link > span {
+  margin-top: 1rem;
+  color: #707070;
+  font-size: 2rem;
+  text-align: center;
 }
 
 @-webkit-keyframes appear {

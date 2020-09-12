@@ -67,14 +67,12 @@
         }
 
         &>img {
-            top: -60%;
-            position: absolute;
-            width: 45rem;
+            margin-bottom: 5rem;
+            width: 25rem;
             height: auto;
             animation: animation--hanging 900ms linear 1s infinite alternate;
             @include respond(tab-port) {
-                width: 35rem;
-                left: -2.5rem;
+                width: 20rem;
             }
         }
 
