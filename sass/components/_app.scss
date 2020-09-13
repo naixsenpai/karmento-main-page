@@ -25,6 +25,12 @@
 }
 
 .app {
+  margin-top: 15rem;
+
+  @include respond(tab-port) {
+    margin-top: 40rem;
+  }
+
   &__mobile {
     position: relative;
     transform: scale(.9);

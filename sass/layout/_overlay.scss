@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   padding-top: 3rem;
   margin-bottom: 5rem;
+  position: relative;
+  z-index: 50;
 
   @include respond(tab-port) {
     background-image: none;

@@ -10,7 +10,7 @@
         position: absolute;
         width: 30rem;
         @include respond(tab-port) {
-            height: 50% !important;
+            width: 30% !important;
         }
         &--left {
             left: 0;

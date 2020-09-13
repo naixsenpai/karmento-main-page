@@ -1,11 +1,20 @@
 const newCount = $('#newCount');
+const newCountContainer = $('#newCount__container__content');
+const newCountImage = $('#newCount__phone');
+
 let didItCount = false;
 
 $(document).on('scroll', function() {
     if($(this).scrollTop() + 200 >= newCount.position().top){
         newCount.css({
             transform: 'translateY(0)'
-        })
+        });
+        newCountContainer.css({
+            opacity: 1
+        });
+        newCountImage.css({
+            opacity: 1
+        });
         if (!didItCount) {
             startCounting();
         }
