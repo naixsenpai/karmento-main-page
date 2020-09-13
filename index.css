@@ -1191,7 +1191,7 @@ body::-webkit-scrollbar-track-piece {
 
 @media only screen and (max-width: 56.25em) {
   .app {
-    margin-top: 40rem;
+    margin-top: 15rem;
   }
 }
 
@@ -3265,6 +3265,12 @@ body::-webkit-scrollbar-track-piece {
           align-items: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .overlay__new-warranty {
+    margin-top: 5rem;
+  }
+}
+
 .overlay__intro {
   margin: 0 auto 0 10rem;
   width: 30rem;
@@ -3385,7 +3391,7 @@ body::-webkit-scrollbar-track-piece {
   }
   .overlay__new-warranty {
     margin: 0 auto;
-    margin-top: 20rem;
+    margin-top: 5rem;
     width: 95%;
   }
 }

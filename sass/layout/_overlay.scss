@@ -76,6 +76,9 @@
     margin-top: 20rem;
     display: flex;
     align-items: center;
+    @include respond(tab-port) {
+      margin-top: 5rem;
+    }
   }
 
   &__intro {
@@ -186,7 +189,7 @@
 
     &__new-warranty {
       margin: 0 auto;
-      margin-top: 20rem;
+      margin-top: 5rem;
       width: 95%;
     }
   }
