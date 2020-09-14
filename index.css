@@ -468,6 +468,77 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
+@-webkit-keyframes shakeMe {
+  2%,
+  18% {
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+            transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  4%,
+  16% {
+    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
+            transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+  6%,
+  10%,
+  14% {
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+            transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  8%,
+  12% {
+    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
+            transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+  18.1% {
+    -webkit-transform: translate3d(0px, 0, 0) rotate(0);
+            transform: translate3d(0px, 0, 0) rotate(0);
+  }
+}
+
+@keyframes shakeMe {
+  2%,
+  18% {
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+            transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  4%,
+  16% {
+    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
+            transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+  6%,
+  10%,
+  14% {
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+            transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  8%,
+  12% {
+    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
+            transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+  18.1% {
+    -webkit-transform: translate3d(0px, 0, 0) rotate(0);
+            transform: translate3d(0px, 0, 0) rotate(0);
+  }
+}
+
+.shake {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation-name: shakeMe;
+          animation-name: shakeMe;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 *,
 *::after,
 *::before {
@@ -3146,77 +3217,6 @@ body::-webkit-scrollbar-track-piece {
   .header__navbar {
     display: none;
   }
-}
-
-@-webkit-keyframes shakeMe {
-  2%,
-  18% {
-    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
-            transform: translate3d(-5px, 0, 0) rotate(-2deg);
-  }
-  4%,
-  16% {
-    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
-            transform: translate3d(5px, 0, 0) rotate(2deg);
-  }
-  6%,
-  10%,
-  14% {
-    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
-            transform: translate3d(-5px, 0, 0) rotate(-2deg);
-  }
-  8%,
-  12% {
-    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
-            transform: translate3d(5px, 0, 0) rotate(2deg);
-  }
-  18.1% {
-    -webkit-transform: translate3d(0px, 0, 0) rotate(0);
-            transform: translate3d(0px, 0, 0) rotate(0);
-  }
-}
-
-@keyframes shakeMe {
-  2%,
-  18% {
-    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
-            transform: translate3d(-5px, 0, 0) rotate(-2deg);
-  }
-  4%,
-  16% {
-    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
-            transform: translate3d(5px, 0, 0) rotate(2deg);
-  }
-  6%,
-  10%,
-  14% {
-    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
-            transform: translate3d(-5px, 0, 0) rotate(-2deg);
-  }
-  8%,
-  12% {
-    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
-            transform: translate3d(5px, 0, 0) rotate(2deg);
-  }
-  18.1% {
-    -webkit-transform: translate3d(0px, 0, 0) rotate(0);
-            transform: translate3d(0px, 0, 0) rotate(0);
-  }
-}
-
-.shake {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-animation-name: shakeMe;
-          animation-name: shakeMe;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
 }
 
 .overlay {
