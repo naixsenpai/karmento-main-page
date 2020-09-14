@@ -1,3 +1,39 @@
+@keyframes shakeMe {
+  2%,
+  18% {
+    transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+
+  4%,
+  16% {
+    transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+
+  6%,
+  10%,
+  14% {
+    transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+
+  8%,
+  12% {
+    transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+
+  18.1% {
+    transform: translate3d(0px, 0, 0) rotate(0);
+  }
+}
+
+.shake {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  animation-name: shakeMe;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .overlay {
   width: 100%;
   background-image: url("/assets/image/overlay.png");
@@ -21,15 +57,40 @@
     gap: 3rem;
     margin: 12rem auto;
 
-    &>a {
-      width: 12rem;
-      &>svg {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    grid-template-rows: 12rem;
+    grid-template-columns: repeat(3, 12rem);
+
+    padding: 1rem 0rem;
+
+    &--pwa {
+      width: 100% !important;
+      grid-column: 1/4;
+      margin-top: 1rem;
+
+      & > img {
         width: 100%;
+        height: auto;
+      }
+    }
+
+    & > a {
+      width: 12rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > svg {
+        width: 100%;
+        height: auto;
       }
     }
 
     @include respond(tab-port) {
-      @include flexCenter;
+      display: grid;
     }
   }
 
@@ -91,7 +152,7 @@
       width: auto;
     }
 
-    &>svg {
+    & > svg {
       width: 100%;
       height: 11.5rem;
 
@@ -101,7 +162,7 @@
       }
     }
 
-    &>p {
+    & > p {
       margin-top: 0.5rem;
 
       @include respond(big-desktop) {
@@ -111,20 +172,41 @@
 
     &__applications {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      justify-content: center;
       align-items: center;
+      gap: 1rem;
+
+      grid-template-rows: 7rem;
+      grid-template-columns: repeat(3, 7rem);
+
       padding: 1rem 0rem;
 
-      &>a>svg {
-        width: 7rem;
-        height: 7rem;
+      &--pwa {
+        grid-column: 1/4;
+        margin-top: 1rem;
+
+        & > img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      & > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > svg {
+          width: 7rem;
+          height: 7rem;
+        }
       }
 
       @include respond(big-desktop) {
         padding: 1rem 1.5rem;
 
-        &>a>svg {
+        & > a > svg {
           width: unset;
           height: unset;
         }

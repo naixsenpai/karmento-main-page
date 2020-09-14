@@ -51,7 +51,7 @@
         &__logo {
             width: 100%;
             @include flexCenter;
-            &>img {
+            &>svg {
                 height: auto;
                 width: 30rem;
             }

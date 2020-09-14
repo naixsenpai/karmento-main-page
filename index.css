@@ -968,7 +968,7 @@ body::-webkit-scrollbar-track-piece {
   border-radius: 10rem;
 }
 
-.services__service > a > div > img {
+.services__service > a > div > svg {
   width: 100%;
   height: 100%;
 }
@@ -2024,7 +2024,7 @@ body::-webkit-scrollbar-track-piece {
           align-items: center;
 }
 
-.feedback__header__logo > img {
+.feedback__header__logo > svg {
   height: auto;
   width: 30rem;
 }
@@ -3148,6 +3148,77 @@ body::-webkit-scrollbar-track-piece {
   }
 }
 
+@-webkit-keyframes shakeMe {
+  2%,
+  18% {
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+            transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  4%,
+  16% {
+    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
+            transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+  6%,
+  10%,
+  14% {
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+            transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  8%,
+  12% {
+    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
+            transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+  18.1% {
+    -webkit-transform: translate3d(0px, 0, 0) rotate(0);
+            transform: translate3d(0px, 0, 0) rotate(0);
+  }
+}
+
+@keyframes shakeMe {
+  2%,
+  18% {
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+            transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  4%,
+  16% {
+    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
+            transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+  6%,
+  10%,
+  14% {
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+            transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  8%,
+  12% {
+    -webkit-transform: translate3d(5px, 0, 0) rotate(2deg);
+            transform: translate3d(5px, 0, 0) rotate(2deg);
+  }
+  18.1% {
+    -webkit-transform: translate3d(0px, 0, 0) rotate(0);
+            transform: translate3d(0px, 0, 0) rotate(0);
+  }
+}
+
+.shake {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation-name: shakeMe;
+          animation-name: shakeMe;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 .overlay {
   width: 100%;
   background-image: url("/assets/image/overlay.png");
@@ -3175,27 +3246,55 @@ body::-webkit-scrollbar-track-piece {
   display: none;
   gap: 3rem;
   margin: 12rem auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -ms-grid-rows: 12rem;
+      grid-template-rows: 12rem;
+  -ms-grid-columns: (12rem)[3];
+      grid-template-columns: repeat(3, 12rem);
+  padding: 1rem 0rem;
+}
+
+.overlay__downloads--pwa {
+  width: 100% !important;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  margin-top: 1rem;
+}
+
+.overlay__downloads--pwa > img {
+  width: 100%;
+  height: auto;
 }
 
 .overlay__downloads > a {
   width: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .overlay__downloads > a > svg {
   width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-width: 56.25em) {
   .overlay__downloads {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: -ms-grid;
+    display: grid;
   }
 }
 
@@ -3319,16 +3418,44 @@ body::-webkit-scrollbar-track-piece {
 
 .overlay__intro__applications {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 1rem;
+  -ms-grid-rows: 7rem;
+      grid-template-rows: 7rem;
+  -ms-grid-columns: (7rem)[3];
+      grid-template-columns: repeat(3, 7rem);
   padding: 1rem 0rem;
+}
+
+.overlay__intro__applications--pwa {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  margin-top: 1rem;
+}
+
+.overlay__intro__applications--pwa > img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay__intro__applications > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .overlay__intro__applications > a > svg {
