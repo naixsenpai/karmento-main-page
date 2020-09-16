@@ -19,7 +19,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: #fff;
 }
 
-.icon__btn {
+.icon__btn--karmento {
   padding: 2rem;
   width: 7rem;
   height: 7rem;
@@ -37,7 +37,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
           align-items: center;
 }
 
-.icon__btn:hover, .icon__btn:active {
+.icon__btn--karmento:hover, .icon__btn--karmento:active {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
@@ -1773,7 +1773,7 @@ body::-webkit-scrollbar-track-piece {
   }
 }
 
-.btn {
+.btn--karmento {
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -1785,29 +1785,29 @@ body::-webkit-scrollbar-track-piece {
   border-radius: 3rem;
 }
 
-.btn:hover {
+.btn--karmento:hover {
   color: #fff !important;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.btn--success {
+.btn--karmento--success {
   background-color: #5FEF81;
 }
 
-.btn--primary {
+.btn--karmento--primary {
   background-color: #175F9B;
 }
 
-.btn--primary--dark {
+.btn--karmento--primary--dark {
   background-color: #043E66;
 }
 
-.btn--secondary {
+.btn--karmento--secondary {
   background-color: #EF5D24;
 }
 
-.btn--link {
+.btn--karmento--link {
   color: #fff;
   margin: 0rem 0.5rem;
   padding: 0.6rem 2rem;
@@ -1817,12 +1817,12 @@ body::-webkit-scrollbar-track-piece {
 }
 
 @media only screen and (min-width: 112.5em) {
-  .btn--link {
+  .btn--karmento--link {
     margin: 0rem 1.5rem;
   }
 }
 
-.btn--link::after {
+.btn--karmento--link::after {
   position: absolute;
   content: "";
   clear: both;
@@ -1832,7 +1832,7 @@ body::-webkit-scrollbar-track-piece {
   left: 0;
 }
 
-.btn--link::after {
+.btn--karmento--link::after {
   z-index: -1;
   height: 120%;
   width: 120%;
@@ -1853,12 +1853,12 @@ body::-webkit-scrollbar-track-piece {
           transform: translate(-50%, 45%);
 }
 
-.btn--link:hover::after, .btn--link:focus::after {
+.btn--karmento--link:hover::after, .btn--karmento--link:focus::after {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.btn--icon {
+.btn--karmento--icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4037,7 +4037,7 @@ body::-webkit-scrollbar-track-piece {
   }
 }
 
-.phone_adviser__btn {
+.phone_adviser__btn--karmento {
   position: absolute;
   bottom: 4rem;
   left: 4rem;
