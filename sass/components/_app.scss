@@ -187,6 +187,8 @@
 
         & > div {
           @include flexCenter;
+          justify-content: right;
+          width: 100%;
 
           & > p {
             font-size: 1.7rem;

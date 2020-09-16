@@ -1516,6 +1516,10 @@ body::-webkit-scrollbar-track-piece {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  width: 100%;
 }
 
 .app__categories__category__subcategory > div > p {
