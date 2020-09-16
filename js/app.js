@@ -1,5 +1,6 @@
 const categories = $('#app__categories');
 const subcategories = $('.subcategory');
+const mobile = $('#app__mobile');
 
 subcategories.css({
     opacity: 0
@@ -27,4 +28,16 @@ $(document).on('scroll', function() {
             animation: 'animation--manycategories--opacity 900ms ease-in-out 900ms forwards',
         })
     }
+})
+
+categories.on('mouseenter',function () {
+    mobile.css({
+        transform: 'translateY(-7rem) scale(0.9)'
+    })
+})
+
+categories.on('mouseleave',function () {
+    mobile.css({
+        transform: 'translateY(0) scale(0.9)'
+    })
 })
